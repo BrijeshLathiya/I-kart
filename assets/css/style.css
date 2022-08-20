@@ -163,6 +163,7 @@ button {
 /*====================== Start Min Cart CSS ====================== */
 .main-min-cart {
   padding: 50px 0 0;
+  background-color: red;
 }
 
 .main-min-cart .cart-item-left-col img {
