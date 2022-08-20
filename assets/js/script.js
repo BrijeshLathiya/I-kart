@@ -35,8 +35,8 @@ $(document).ready(function () {
   });
 });
 
-  /*********  Main PDP Slick  *********/
-  $(document).ready(function(){
+/*********  Main PDP Slick  *********/
+$(document).ready(function () {
   $('.main-pdp-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -137,6 +137,25 @@ $(document).ready(function () {
       }
     ]
   })
- 
 
+  $('.featured-brands-row').slick({
+    infinite: false,
+    centerMode: false,
+    arrows: true,
+    dots: false,
+    autoplay: false,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
+
+});
+$(document).ready(function () {
+
+  $('.main-min-cart .main-title-code .btn').click(function () {
+    $('.main-enter-pin').addClass("active");
+  });
+  $('.enter-pin-close-btn a').click(function () {
+    $('.main-enter-pin').removeClass("active");
+  });
 });

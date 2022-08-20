@@ -3247,6 +3247,26 @@ input[type='checkbox']:checked+label>span:before {
   width: 100%;
 }
 
+.left-accordion-filter .left-min-max input {
+  width: 100%;
+}
+
+.left-mobile-accessories h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin: 12px 0 0 50px;
+}
+
+.left-mobile-accessories .mens-top-wear {
+  margin: 12px 0 0 60px;
+}
+
+.left-mobile-accessories .mens-top-wear li:not(:first-of-type) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .left-accordion-filter .accordion-body {
   padding: 0 20px 20px;
 }
@@ -3527,7 +3547,7 @@ input[type='checkbox']:checked+label>span:before {
   display: flex;
 }
 
-.categories-item-top {
+.tab-view .categories-item-top {
   display: flex;
   flex-wrap: wrap;
   padding: 30px 137px 22px 80px;
