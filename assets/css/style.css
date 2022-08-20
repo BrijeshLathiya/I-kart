@@ -1901,13 +1901,15 @@ button.accordion-button {
 /*==================== start my order css ===============*/
 /*---------------- radio button css ---------------*/
 .l-radio {
-  padding: 6px;
   border-radius: 50px;
   display: inline-flex;
   cursor: pointer;
   transition: background 0.2s ease;
   margin: 8px 0;
   -webkit-tap-highlight-color: transparent;
+  padding-top: 6px ;
+  padding-bottom: 6px;
+  padding-left: 5px;
 }
 
 .l-radio:hover,
@@ -1948,136 +1950,13 @@ button.accordion-button {
 
 /*---------- end radio button css --------*/
 /*---------------- start check box css---------------*/
-* {
-  box-sizing: border-box;
-  user-select: none;
+.checkbox_my_order_main .categories-item-bottom{
+  margin-left: 25px;
+  padding: 8px 0;
 }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
-
-body {
-  align-items: center;
-  font: 24px/1.4 'RobotoDraft', sans-serif;
-  color: #000;
-}
-
-input[type='checkbox'] {
-  height: 0;
-  width: 0;
-  display: inherit;
-}
-
-input[type='checkbox']+label {
-  position: relative;
-  display: flex;
-  margin: 2px 0;
-  align-items: center;
-  color: #9e9e9e;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.23, 1);
-}
-
-input[type='checkbox']+label>ins {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 2em;
-  height: 0;
-  width: 100%;
-  overflow: hidden;
-  text-decoration: none;
-  transition: height 300ms cubic-bezier(0.4, 0, 0.23, 1);
-}
-
-input[type='checkbox']+label>ins>i {
-  position: absolute;
-  bottom: 0;
-  font-style: normal;
-  color: var(--themegreen);
-}
-
-input[type='checkbox']+label>span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1em;
-  width: 1em;
-  height: 1em;
-  background: transparent;
-  border: 2px solid #9e9e9e;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.23, 1);
-}
-
-input[type='checkbox']+label:hover,
-input[type='checkbox']:focus+label {
-  color: #000;
-}
-
-input[type='checkbox']+label:hover>span,
-input[type='checkbox']:focus+label>span {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-input[type='checkbox']:checked+label>ins {
-  height: 100%;
-}
-
-input[type='checkbox']:checked+label>span {
-  border: 0.5em solid var(--themegreen);
-  animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
-}
-
-input[type='checkbox']:checked+label>span:before {
-  content: '';
-  position: absolute;
-  top: 19px;
-  left: 6px;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  transform: rotate(45deg);
-  transform-origin: 0% 100%;
-  animation: checkbox-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
-}
-
-@keyframes shrink-bounce {
-  0% {
-    transform: scale(1);
-  }
-
-  33% {
-    transform: scale(0.85);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes checkbox-check {
-  0% {
-    width: 0;
-    height: 0;
-    border-color: #fff;
-    transform: translate3d(0, 0, 0) rotate(45deg);
-  }
-
-  33% {
-    width: 0.2em;
-    height: 0;
-    transform: translate3d(0, 0, 0) rotate(45deg);
-  }
-
-  100% {
-    width: 0.2em;
-    height: 0.5em;
-    border-color: #fff;
-    transform: translate3d(0, -0.5em, 0) rotate(45deg);
-  }
+.checkbox_my_order_main .categories-item-bottom label span{
+  font-size: 20px;
 }
 
 /*---------- end checkbox css --------*/
@@ -4748,15 +4627,19 @@ a.category_items-l {
   align-items: flex-start;
 }
 
-.delivery_address_header {
+.delivery_address_header a{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: rgb(0 0 0 / 80%);
+  color: rgba(0, 0, 0, 0.5) !important;
   margin-bottom: 0;
+  text-decoration: none;
 }
+.delivery_address_header a:hover{
+  color: #000 !important;
+} 
 
 .delivery_address {
   font-family: 'Inter';
@@ -5023,6 +4906,8 @@ a.category_items-l {
 }
 
 /*Start order placed Pop-Up */
+
+
 .btn_cancel_order_order_placed {
   outline: none !important;
   background: none;
@@ -5037,6 +4922,114 @@ a.category_items-l {
 .btn_cancel_order_order_placed p i,
 .btn_cancel_order_order_placed a i {
   font-size: 23px;
+}
+
+
+/* Start cancel Order Popup */
+
+.modal-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  max-width: 100%;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-content{
+  max-width: 774px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgb(0 0 0 / 10%);
+}
+.modal-dialog.active .main-overlay{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-dialog.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main_popup_cancel{
+  display: flex;
+  justify-content: center;
+  font-family: inter;
+}
+.main_popup_cancel>form{
+  width: 100%;
+  padding: 50px 100px;
+  position: relative;
+}
+
+.reason_cancel_title{
+  color: #333333;
+}
+
+.border_close{
+  border: 1px solid #000;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.cancellation_reason_text_box{
+  border-color:#C2C2C2 ;
+  width: 100%;
+  color: #666666;
+  font-weight: 400 !important;
+  font-size: 20px;
+}
+.cancellation_reason_text_box::placeholder{
+  color: #666666;
+  font-weight: 400 !important;
+  font-size: 20px;
+}
+.cancellation_reason_text_box:focus{
+  outline: none;
+  border-color:#C2C2C2 ;
+}
+.submit_cancel_reason{
+  background-color: #3B903F;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 65px;
+  border:transparent ;
+}
+.modal-header.border-bottom-0 .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.modal-header {
+  padding: 0;
+  margin: 0 0 30px;
+}
+.modal-bottom-btn {
+  margin: 30px 0 0;
+}
+.modal-bottom-btn .submit_cancel_reason {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 22px 136px;
 }
 
 /*End order placed Pop-Up */
