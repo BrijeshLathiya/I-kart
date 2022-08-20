@@ -5322,16 +5322,19 @@ a.category_items-l {
 .mobile_name_main_page {
     font-size: 28px;
     font-weight: 600;
+    line-height: 1.5;
 }
 
 .info_tag_line_mobile_card {
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.5;
     text-transform: capitalize;
 }
 
 .just_price_mobile_card {
     font-size: 24px;
+    line-height: 1.5;
     color: #FFE338;
     display: inline;
     font-weight: 600;
@@ -5376,7 +5379,7 @@ a.category_items-l {
     height: 100px;
     background: #ECF5F3;
     border-radius: 0px 10px 10px 0px;
-    background-image: url(../image/angle-right.png);
+    background-image: url(../images/angle-right.png);
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: center center;
