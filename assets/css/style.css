@@ -1128,7 +1128,6 @@ button.accordion-button {
   height: 68px;
 }
 
-
 .enter-pin-location-icon {
   max-width: 65px;
   width: 100%;
@@ -4687,7 +4686,8 @@ a.category_items-l {
 
 }
 
-.path {
+
+ .path {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -4699,6 +4699,16 @@ a.category_items-l {
   align-items: center;
 
   color: rgba(0, 0, 0, 0.6);
+  text-decoration: none !important;
+}
+.path .fa-angle-right {
+    margin-top: auto;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.path:hover {
+  color: #000;
 }
 
 .path-flex {
