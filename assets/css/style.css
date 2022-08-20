@@ -4434,6 +4434,523 @@ input[type='checkbox']:checked+label>span:before {
 }
 
 /*====================== end offre and home page css ====================== */
+
+
+/*======================Start order-palced-cancellation page ====================== */
+
+
+.section-path {
+  padding: 16px 91px 0px;
+
+}
+
+.path {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  display: flex;
+  align-items: center;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.path-flex {
+  display: flex;
+}
+
+.category-section-f {
+  padding: 0px 50px;
+
+}
+
+/* Details Box  */
+
+.details-box {
+  padding: 30px 62px;
+}
+
+.order-placed,
+.order-placed-cat {
+  background-color: rgba(115, 196, 180, 0.2);
+}
+
+.col-lg-12.datails_box {
+  margin: 0px 15px;
+  background-color: #FFF;
+  padding: 25px;
+  display: flex;
+}
+
+.datails_box_first {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.delivery_address_header {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0 0 0 / 80%);
+  margin-bottom: 0;
+}
+
+.delivery_address {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  opacity: 0.6;
+  max-width: 567px;
+  width: 100%;
+}
+
+.change {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 15px;
+  color: #3B903F;
+}
+
+.change-btn {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.cancle,
+.need-help {
+  padding-left: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF0000;
+}
+
+.need-help {
+  color: #2A4CFF;
+}
+
+.need-help:hover {
+  color: #2A4CFF;
+}
+
+.fa-times-circle-o {
+  color: #FF0000;
+}
+
+.fa-question-circle-o {
+  color: #2A4CFF
+}
+
+.cancle:hover {
+  color: #FF0000;
+}
+
+.share-order-details {
+  margin-top: 41px;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 497px;
+  width: 100%;
+}
+
+.offer-applied {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3B903F;
+}
+
+.hh-grayBox {
+  margin-bottom: 20px;
+  padding: 35px;
+  margin-top: 20px;
+}
+
+.pt45 {
+  padding-top: 45px;
+}
+
+.order-tracking {
+  text-align: center;
+  width: 25%;
+  position: relative;
+  display: block;
+}
+
+.order-tracking .is-complete {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 0px solid #AFAFAF;
+  background-color: #AFAFAF;
+  margin: 0 auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+  z-index: 2;
+}
+
+.order-tracking .is-complete:after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 7px;
+  top: -2px;
+  bottom: 0;
+  left: 5px;
+  margin: auto 0;
+  border: 0px solid #AFAFAF;
+  border-width: 0px 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.order-tracking.completed .is-complete {
+  border-color: #27aa80;
+  border-width: 0px;
+  background-color: #27aa80;
+}
+
+.order-tracking.completed .is-complete:after {
+  border-color: #fff;
+  border-width: 0px 3px 3px 0;
+  width: 7px;
+  left: 11px;
+  opacity: 1;
+}
+
+.order-tracking p {
+  color: #A4A4A4;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.order-tracking p span {
+  font-size: 14px;
+}
+
+.order-tracking.completed p {
+  color: #000;
+}
+
+.order-tracking::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: calc(100% - 40px);
+  background-color: #AFAFAF;
+  top: 13px;
+  position: absolute;
+  left: calc(-50% + 20px);
+  z-index: 0;
+}
+
+.order-tracking:first-child:before {
+  display: none;
+}
+
+.order-tracking.completed:before {
+  background-color: #27aa80;
+}
+
+.order-status {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.order-active {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3B903F !important;
+}
+
+.order-date-status {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 1;
+}
+
+.order-position {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #A4A4A4 !important;
+}
+
+.delivery-address-change {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.delivery-address-left {
+  max-width: 696px;
+  width: 100%;
+}
+
+.delivery-address-right {
+  max-width: 676px;
+  width: 100%;
+}
+
+.btn_cancel_order_order_placed .order_placed_cancel {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF0000;
+  margin-left: 13px;
+}
+
+.btn_cancel_order_order_placed .need-help {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2A4CFF;
+  margin-left: 13px;
+  padding: 0;
+}
+
+.btn_cancel_order_order_placed {
+  margin: 21px 0;
+}
+
+.delivery-address-right .delivery_address {
+  max-width: unset;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.share-order-details .change {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3B903F;
+  background: #FFFFFF;
+  border: 1px solid rgb(0 0 0 / 40%);
+  padding: 8px 45px;
+}
+
+
+/*Start order placed Pop-Up */
+.btn_cancel_order_order_placed {
+  outline: none !important;
+  background: none;
+  border: none;
+  margin: 10px;
+}
+
+.btn_cancel_order_order_placed p {
+  margin: 0;
+}
+
+.btn_cancel_order_order_placed p i,
+.btn_cancel_order_order_placed a i {
+  font-size: 23px;
+}
+
+/*End order placed Pop-Up */
+
+/*======================End order-palced-cancellation page ====================== */
+
+
+/*======================Start cancellation page ====================== */
+
+/* cancellation */
+.cancellation-page {
+  padding: 50px 0;
+  font-family: 'Inter';
+}
+
+.cancellation-page .container {
+  max-width: 1700px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.cancellation-page .original-payment-mode:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+.cancellation-page .main-accordion-form,
+.cancellation-page .min-cart-right-col {
+  padding: 0 15px;
+}
+
+.cancellation-page .accordion-body {
+  padding: 30px 40px;
+}
+
+.cancellation-page .cancellation-accordion-title h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+
+.cancellation-page .original-payment-mode {
+  padding-left: 49px;
+}
+
+.cancellation-page .original-payment-mode label input {
+  display: none;
+}
+
+.cancellation-page .original-payment-mode label span::before,
+.cancellation-page .original-payment-mode label span::after {
+  content: "";
+  width: 29px;
+  height: 29px;
+  border: 2px solid rgb(0 0 0 / 0.8);
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.cancellation-page .original-payment-mode label input:checked~span::after {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-color: #3b903f;
+  left: -45px;
+  border: 0;
+  /* opacity: 0;  */
+}
+
+.cancellation-page .original-payment-mode label span {
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0 0 0 / 80%);
+  display: block;
+}
+
+.cancellation-page .original-payment-inner p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(0 0 0 / 60%);
+  margin: 9px 0 20px;
+}
+
+.cancellation-page .original-payment-inner .btn {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 21px 35px;
+  color: #000;
+  margin: 0;
+}
+.cancellation-page .min-cart-product {
+  padding: 50px;
+  background-color: #fff;
+}
+.cancellation-page .cart-product-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cancellation-page .cart-product-left-col {
+  max-width: 93px;
+  width: 100%;
+}
+.cancellation-page .cart-product-right-col {
+  flex: 1;
+  padding-left: 45px;
+}
+.cancellation-page .cart-product-right-col h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+.cancellation-page .cart-product-right-col h5 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: rgb(0 0 0 / 40%);
+  margin: 10px 0;
+}
+.cancellation-page .cart-product-right-col h6 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin: 20px 0 0;
+}
+.cancellation-page .original-payment-inner .btn:hover
+{
+  color: #000 !important;
+  padding: 21px 35px;
+
+}
+
+/*======================End cancellation page ====================== */
+
+/*======================Start cancellation page ====================== */
+
+.details-box-cancellation .order-status .row::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: calc(100% - 255px);
+  background-color: #AFAFAF;
+  top: 13px;
+  position: absolute;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+}
+
+.details-box-cancellation .order-tracking::before{
+  display: none;
+}
+.details-box-cancellation .order-tracking .cancelled {
+  color: #FF2D2D !important;
+}
+
+/*======================End cancellation page ====================== */
+
+
+
 /* =========================== start Main Footer Css ==================== */
 .footer-heading {
   letter-spacing: 2px;
@@ -4531,10 +5048,15 @@ input[type='checkbox']:checked+label>span:before {
   padding-bottom: 20px;
 }
 
+
 /* =========================== end Main Footer Css ==================== */
 
 
-/*====================== Start Home page Media CSS ====================== */
+
+/*================================================================== */
+                      /* Start Home page Media CSS */
+/*================================================================== */
+
 @media screen and (max-width: 1980px) {
   .logo-main {
     display: flex;
@@ -5257,7 +5779,14 @@ input[type='checkbox']:checked+label>span:before {
 }
 }
 
-/*====================== End Home page Media CSS ====================== */
+/*================================================================== */
+                      /* End Home page Media CSS */
+/*================================================================== */
+
+
+
+
+
 .migh-interested-section .cart-interested-slider .slick-arrow {
   background-color: #fff;
 }
