@@ -5225,6 +5225,209 @@ a.category_items-l {
 
 /*======================End cancellation page ====================== */
 
+/*======================End mobile_main page ====================== */
+
+/* Start Main Mobile page */
+
+.main-mobile-section,
+.second-main-mobile-section {
+    margin: 0;
+}
+
+.main-mobile-section .container-fluid {
+    position: relative;
+}
+
+.row.main-mobile-slider {
+    max-width: 894px;
+    width: 100%;
+    margin: 0 auto;
+    position: initial;
+}
+
+.main-mobile-col {
+    padding: 0 20px;
+}
+
+.main_info_mobile_card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    background-image: url(../images/mobile_backgropd_slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.mobile_image_maina_mobile_page {
+    max-width: 240px;
+    width: 100%;
+    position: relative;
+    padding-top: 34%;
+}
+
+.mobile_image_maina_mobile_page img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.no_costemi_bg_top {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    background-color: #E6F3E5;
+    color: #25772E;
+    font-weight: 600;
+    padding: 3px 14px;
+    font-size: 14px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap
+}
+
+.mobile_name_main_page {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.info_tag_line_mobile_card {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.just_price_mobile_card {
+    font-size: 24px;
+    color: #FFE338;
+    display: inline;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.price_mobile_card {
+    font-size: 20px;
+    color: #fff;
+}
+
+.section_title_main_mobile {
+    display: flex;
+    justify-content: center;
+}
+
+.section_title_main_mobile p {
+    background-color: #4FC6AF;
+    color: #fff;
+    padding: 33px 35px;
+    border-radius: 22px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    max-width: 678px;
+    width: 100%;
+}
+
+.main-mobile-left {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-mobile-section .slick-arrow {
+    width: 50px;
+    height: 100px;
+    background: #ECF5F3;
+    border-radius: 0px 10px 10px 0px;
+    background-image: url(../image/angle-right.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center center;
+}
+
+.main-mobile-section .slick-arrow:before {
+    display: none;
+}
+
+.main-mobile-section .slick-prev {
+    left: 0;
+    transform: translate(0, -50%) scale(-1);
+}
+
+.main-mobile-section .slick-next {
+    right: 0;
+}
+
+/* End Main Mobile page */
+
+/* Start Second Main Mobile page */
+
+.second-main-mobile-section {
+    overflow: hidden;
+}
+
+.second-main-mobile-section .row {
+    margin: 0 -20px;
+    padding: 25px;
+}
+
+.second-main-mobile-section .mobile_image_maina_mobile_page {
+    max-width: 200px;
+    padding-top: 47%;
+}
+
+.second-main-mobile-section .mobile_name_main_page {
+    font-size: 24px;
+}
+
+.second-main-mobile-section .main_info_mobile_card {
+    flex-direction: row-reverse;
+}
+
+.second-main-mobile-section .main-mobile-left {
+    justify-content: flex-start;
+}
+
+.second-main-mobile-section .container-fluid {
+    margin: 0 !important;
+}
+
+/* End Second Main Mobile page */
+
+.big-main-mobile-section .row {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.big-main-mobile-section .mobile_image_maina_mobile_page {
+    max-width: 340px;
+}
+
+.big-main-mobile-section .mobile_name_main_page {
+    font-size: 38px;
+}
+
+.big-main-mobile-section .info_tag_line_mobile_card {
+    font-size: 28px;
+}
+
+.big-main-mobile-section .just_price_mobile_card {
+    font-size: 40px;
+}
+
+/*======================End mobile_main page ====================== */
 
 
 /* =========================== start Main Footer Css ==================== */
