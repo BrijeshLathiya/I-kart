@@ -96,6 +96,13 @@ button {
 
 /*============== End Default CSS ==============*/
 
+
+
+
+
+
+
+
 /*====================== Start custome home page ====================== */
 .bg_header {
   box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.12);
@@ -159,6 +166,11 @@ button {
 }
 
 /*====================== End custome home page ====================== */
+
+
+
+
+
 
 /*====================== Start Min Cart CSS ====================== */
 .main-min-cart {
@@ -419,6 +431,15 @@ button {
 }
 
 /*====================== End Min Cart  CSS ====================== */
+
+
+
+
+
+
+
+
+
 /*====================== Start Form Section CSS ====================== */
 .main-accordion-form .accordion-item {
   margin-bottom: 20px;
@@ -756,6 +777,13 @@ button.accordion-button {
 }
 
 /*======================end form section=====================*/
+
+
+
+
+
+
+
 /*====================== payment option =====================*/
 .patment-options-content {
   padding: 0;
@@ -1025,8 +1053,8 @@ button.accordion-button {
 .patment-options-chack:last-of-type>label {
   padding-bottom: 30px;
 }
-
 /*====================== End Form Section CSS ====================== */
+
 
 /*====================== Start Enter pin Section CSS ====================== */
 .main-enter-pin {
@@ -3728,9 +3756,6 @@ input[type='checkbox']:checked+label>span:before {
   margin-left: 30px;
 }
 
-
-/*  */
-
 .shipping-section {
   padding: 85px 0 60px;
 }
@@ -3892,7 +3917,10 @@ input[type='checkbox']:checked+label>span:before {
 }
 
 /*==================== end men's wear Page ===============*/
+
+
 /*====================== start offer and home page css ====================== */
+
 .main-commen-page {
   background-color: #fff;
 }
@@ -4440,6 +4468,217 @@ input[type='checkbox']:checked+label>span:before {
 /*======================Start order-palced-cancellation page ====================== */
 
 
+.main-category {
+  margin-top: 60px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.category-section-f {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4FC6AF33;
+}
+
+.fcategory-name {
+  margin-bottom: 0px !important;
+
+}
+
+.catname {
+  text-align: center;
+  font-family: 'Rasa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.category-name-travel {
+  margin-bottom: 0px !important;
+
+}
+
+.category-name {
+  margin-bottom: 0px !important;
+}
+
+li {
+  padding: 5px 10px;
+}
+
+.category {
+  display: grid;
+}
+
+/* .fcategory_image {
+  padding: 0px 0px 0px 50px;
+} */
+
+.dropdown-submenu>.dropdown-menu {
+  background: #ECF5F3;
+  border-radius: 12px !important;
+}
+
+.dropdown-menu.show {
+  width: max-content;
+  box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.12);
+  left: -60px !important;
+}
+
+a.category_items {
+  font-family: 'Inter';
+  font-size: 14px;
+}
+
+.wdcategory:hover {
+  text-decoration: none;
+  color: #4FC6AF;
+}
+
+a.category_items:hover {
+  text-decoration: none;
+  color: #4FC6AF;
+  font-size: 16px;
+
+}
+
+.categories {
+  display: flex;
+}
+
+a.wdcategory:hover {
+  text-decoration: none;
+  color: #4FC6AF;
+}
+
+.category-image {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.dropdown {
+  margin-top: auto !important;
+  text-align: center;
+}
+
+.category-image-travel {
+  margin: 0px 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sub-cat-name {
+  display: flex;
+}
+
+.cat {
+  display: flex;
+}
+
+.cat:hover {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+
+}
+
+.fa-angle-right {
+  margin-right: 5px;
+}
+
+
+/* multiple drop-down  */
+
+.dropdown-submenu:hover>.dropdown-menu {
+  width: max-content;
+  margin-right: 20px;
+}
+
+.dropdown-submenu {
+  position: relative;
+  padding: 5px 10px;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+}
+
+li.divider {
+  padding: 0px;
+  text-align: center;
+}
+
+li.sub-cat {
+  margin-right: 25px;
+  margin-left: 15px;
+  border-radius: 15px;
+}
+
+li.sub-cat:hover {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.sub-cat-heading {
+  font-family: 'Inter' !important;
+  font-size: 16px !important;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+}
+
+ul.dropdown-menu.last {
+  left: -86%;
+}
+
+.col-sm-10.last-col {
+  margin-right: 0px;
+}
+
+a.category_items-l:hover {
+  text-decoration: none;
+  color: #4FC6AF;
+}
+
+a.category_items-l {
+  font-family: 'Inter';
+  font-size: 14px;
+}
+
 .section-path {
   padding: 16px 91px 0px;
 
@@ -4765,7 +5004,6 @@ input[type='checkbox']:checked+label>span:before {
   border: 1px solid rgb(0 0 0 / 40%);
   padding: 8px 45px;
 }
-
 
 /*Start order placed Pop-Up */
 .btn_cancel_order_order_placed {
