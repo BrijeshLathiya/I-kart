@@ -1942,7 +1942,7 @@ button.accordion-button {
   -webkit-tap-highlight-color: transparent;
   padding-top: 6px ;
   padding-bottom: 6px;
-  padding-left: 5px;
+  padding-left: 12px;
 }
 
 .l-radio:hover,
@@ -1964,6 +1964,7 @@ button.accordion-button {
   margin: 0;
   transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
   pointer-events: none;
+  margin-top: 9px;
 }
 
 .l-radio input:focus {
@@ -1978,7 +1979,8 @@ button.accordion-button {
   vertical-align: middle;
   display: inline-block;
   line-height: 20px;
-  padding: 0 8px;
+  padding: 6px 8px;
+  padding-top: 8px;
 }
 
 /*---------- end radio button css --------*/
