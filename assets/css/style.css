@@ -5455,6 +5455,9 @@ a.category_items-l {
 .big-main-mobile-section .just_price_mobile_card {
     font-size: 40px;
 }
+ .mobile_main_title_bg{
+  background-image: url(../images/mobile_main_banner.png);
+}
 
 /*======================End mobile_main page ====================== */
 
@@ -5934,12 +5937,15 @@ a.category_items-l {
     margin-left: 0px;
   }
   /* deals-of-the-day */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col, .top-offers-page .today-deals-section .migh-interested-col {
+    width: 30%;
+  }
   .deals-of-the-day-page .today-deals-section .migh-interested-slider, .top-offers-page .today-deals-section .migh-interested-slider {
     align-items: center;
     justify-content: center;
   }
   .migh-interested-section .migh-interested-container{
-    padding: 40px;
+    padding:0 40px;
   }
 
 
