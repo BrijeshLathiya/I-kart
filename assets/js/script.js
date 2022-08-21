@@ -148,7 +148,6 @@ $(document).ready(function () {
   })
 
   $('.featured-brands-row').slick({
-    infinite: false,
     centerMode: false,
     arrows: true,
     dots: false,
@@ -157,7 +156,6 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
   });
-
 });
 $(document).ready(function () {
 
