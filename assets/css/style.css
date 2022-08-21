@@ -5688,6 +5688,7 @@ a.category_items-l {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
 .profile_wrapper .email_or_profile_img_main {
@@ -5697,9 +5698,7 @@ a.category_items-l {
 
 .profile_wrapper .email_or_profile_img_main .email_profile {
   font-family: 'Roboto';
- 
 }
-
 .profile_wrapper .email_or_profile_img_main .user_name {
   font-family: 'Roboto';
   font-style: normal;
@@ -5707,6 +5706,7 @@ a.category_items-l {
   font-size: 18px;
   line-height: 18px;
   color: #000;
+
 }
 
 /* =========================== End profile css ==================== */
@@ -6192,6 +6192,11 @@ a.category_items-l {
     justify-content: center;
   }
 
+/* profile */
+.profile_wrapper .my_account_top .title_my_ac{
+  font-size: 18px ;
+}
+
 
 }
 
@@ -6303,6 +6308,11 @@ a.category_items-l {
   .upi-id-inner {
     padding: 0px 0px;
   }
+
+  .upi-patment-chack input:checked+label .upi-id-content{
+    margin-left: -120px !important;
+  }
+
 
   .upi-patment-chack label .phonepe-btn,
   .upi-id-content a,
