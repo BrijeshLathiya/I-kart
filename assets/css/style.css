@@ -94,7 +94,6 @@ button {
   padding-bottom: 30px !important;
 }
 
-
 /* begin::scroll bar css*/
 .scrollbar {
   float: left;
@@ -123,13 +122,7 @@ button {
   border-radius: 50px;
 }
 
-
 /*============== End Default CSS ==============*/
-
-
-
-
-
 
 
 
@@ -5688,7 +5681,6 @@ a.category_items-l {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
 }
 
 .profile_wrapper .email_or_profile_img_main {
@@ -5698,17 +5690,18 @@ a.category_items-l {
 
 .profile_wrapper .email_or_profile_img_main .email_profile {
   font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #848484;
 }
+
 .profile_wrapper .email_or_profile_img_main .user_name {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  color: #000;
-
-}
-.profile_details_wrapper .details_list li a{
   color: #000;
 }
 
@@ -6169,6 +6162,7 @@ a.category_items-l {
 
   .migh-interested-section .migh-interested-container {
     padding: 40px;
+
   }
 
   /* login */
@@ -6194,11 +6188,6 @@ a.category_items-l {
     display: flex;
     justify-content: center;
   }
-
-/* profile */
-.profile_wrapper .my_account_top .title_my_ac{
-  font-size: 18px;
-}
 
 
 }
@@ -6317,6 +6306,7 @@ a.category_items-l {
   .cash-on-delivery .upi-id-btn {
     padding: 10px 40px;
   }
+
   .upi-id-inner input {
     padding: 10px 10px;
   }
@@ -6557,143 +6547,142 @@ a.category_items-l {
 
   .migh-interested-section .migh-interested-container {
 
-    padding: 0 30px;
+    padding: 30px;
   }
+}
+
+/*================================================================== */
+/* End Home page Media CSS */
+/*================================================================== */
 
 
-  /*================================================================== */
-  /* End Home page Media CSS */
-  /*================================================================== */
 
 
 
+.migh-interested-section .cart-interested-slider .slick-arrow {
+  background-color: #fff;
+}
 
+.like-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
 
-  .migh-interested-section .cart-interested-slider .slick-arrow {
-    background-color: #fff;
-  }
+/*====================== Start Form page Media CSS ====================== */
 
-  .like-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
+.use-this-address-inner {
+  background-color: #fff;
+  padding: 14px 20px 30px;
+}
 
-  /*====================== Start Form page Media CSS ====================== */
+.address-item {
+  background-color: rgba(162, 205, 197, 0.3);
+  padding: 20px 30px 30px 70px;
+}
 
-  .use-this-address-inner {
-    background-color: #fff;
-    padding: 14px 20px 30px;
-  }
+.use-this-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
 
-  .address-item {
-    background-color: rgba(162, 205, 197, 0.3);
-    padding: 20px 30px 30px 70px;
-  }
+.address-item label {
+  width: 100%;
+}
 
-  .use-this-content h3 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
-  }
+.edit-address {
+  color: #3B903F;
+}
 
-  .address-item label {
-    width: 100%;
-  }
+.use-this-content h3:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -52px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+  transform: translateY(-50%);
+}
 
-  .edit-address {
-    color: #3B903F;
-  }
+.use-this-content h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -46px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #4FC6AF;
+  transform: translateY(-50%);
+  opacity: 0;
+}
 
-  .use-this-content h3:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -52px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
-    transform: translateY(-50%);
-  }
+.address-item label input:checked~.use-this-content h3::after {
+  opacity: 1;
+}
 
-  .use-this-content h3::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -46px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: #4FC6AF;
-    transform: translateY(-50%);
-    opacity: 0;
-  }
+.use-this-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px 0 32px;
+  max-width: 426px;
+  width: 100%;
+}
 
-  .address-item label input:checked~.use-this-content h3::after {
-    opacity: 1;
-  }
+.use-this-content h6 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
 
-  .use-this-content p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    padding: 15px 0 32px;
-    max-width: 426px;
-    width: 100%;
-  }
+.address-item:not(:last-of-type) {
+  margin-bottom: 2px;
+}
 
-  .use-this-content h6 {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-  }
+.add-new-address-btn a .add-new-address-inner {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #4FC6AF;
+}
 
-  .address-item:not(:last-of-type) {
-    margin-bottom: 2px;
-  }
+.add-new-address-btn a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 
-  .add-new-address-btn a .add-new-address-inner {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-    color: #4FC6AF;
-  }
+.add-new-address-btn .add-new-address-icon {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #4FC6AF;
+  margin-right: 10px;
+}
 
-  .add-new-address-btn a {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
+.deliver-here-btn a {
+  background-color: #3B903F;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding: 22px 40px;
+}
 
-  .add-new-address-btn .add-new-address-icon {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
-    color: #4FC6AF;
-    margin-right: 10px;
-  }
-
-  .deliver-here-btn a {
-    background-color: #3B903F;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    padding: 22px 40px;
-  }
-
-  .deliver-here-btn {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
-  }
+.deliver-here-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
 }
 
 /* ====================== End Form page Media CSS ====================== */
