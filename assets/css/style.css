@@ -5559,8 +5559,114 @@ a.category_items-l {
   padding-bottom: 20px;
 }
 
-
 /* =========================== end Main Footer Css ==================== */
+
+/* =========================== Start Login css ==================== */
+
+.login_main{
+    background-color: #ECF5F3;
+    max-width: 1066px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#fff !important;
+    background: linear-gradient(90deg, rgba(94, 235, 207, 0.95) 1.27%, rgba(255, 255, 255, 0) 95.92%);
+    filter: drop-shadow(4px 6px 100px #4D7C73);
+    border-radius: 20px;
+    padding: 100px 100px;
+}
+
+.login_main .close_img_but{
+  background-color: transparent;
+  border: transparent;
+}
+.login_main .login_main_info .logo_img_login{
+  max-width: 300px;
+  width: 100%;
+}
+.login_main .login_main_info .login_form input{
+  max-width: 245px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 70px;
+  border: 2px solid #fff;
+  font-size: 12px;
+}
+.login_main .login_main_info .login_form {
+  padding-left: 100px;
+  flex: 1;
+}
+.login_main .login_main_info .login_form input:focus{
+  outline: none !important; 
+  box-shadow: none !important;
+  border: 2px solid #A2CDC5;
+  transition: ease-in-out;
+}
+
+.login_form .btn_login_get_opt{
+  background: #A2CDC5;
+  border-radius: 70px;
+  padding: 6px 20px;
+  border: 2px solid #A2CDC5;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.login_form .btn_login_get_opt:hover{
+  background: transparent;
+  border: 2px solid #A2CDC5;
+  color: #A2CDC5;
+} 
+.login_img_form_main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* =========================== End Login css ==================== */
+
+/* =========================== Start profile css ==================== */
+.bg_on_body{
+  background-color: #ECF5F3;
+  padding: 50px 0;
+}
+.profile_wrapper {
+  background-color: #fff;
+  border-bottom: 1px #CCCCCC solid;
+}
+.profile_wrapper .my_account_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_wrapper .email_or_profile_img_main{
+  display: flex;
+  align-items: center;
+}
+
+.profile_wrapper .email_or_profile_img_main .email_profile{
+  font-family: 'Roboto';
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #848484;
+}
+
+.profile_wrapper  .email_or_profile_img_main .user_name{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+color: #000;
+}
+/* =========================== End profile css ==================== */
+
+
 
 
 
@@ -5629,6 +5735,14 @@ a.category_items-l {
   .main-pdp-section .main-pdp-btns {
     text-align: center;
 
+  }
+  /* login */
+  .login_main .login_main_info .logo_img_login {
+    max-width: 200px;
+    width: 100%;
+  }
+  .login_main{
+        padding: 80px 100px;
   }
 
 }
@@ -5947,10 +6061,41 @@ a.category_items-l {
   .migh-interested-section .migh-interested-container{
     padding:40px;
   }
+  /* login */
+  .login_main .login_main_info .logo_img_login {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .login_main{
+    padding: 15px;
+  }
+  .login_img_form_main{
+    display: block;
+  }
+  .login_main .login_main_info .login_form input{
+    flex: 1;
+    max-width: 100%;
+  }
+.login_form .login_center_mobile{
+  display: flex;
+  justify-content: center;
+}
 
 
 }
 
+@media screen and (max-width: 575px) {
+  .login_main .login_main_info .logo_img_login {
+    max-width: 100px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+  .login_main .login_main_info .login_form {
+    padding-left: 0;
+    max-width: 90%;
+    margin: auto;
+}
+}
 @media screen and (max-width: 425px) {
   .logo-main {
     display: flex;
