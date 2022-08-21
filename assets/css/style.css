@@ -6177,10 +6177,13 @@ padding-top: 4px;
   .upi-id-inner {
     padding: 0px 0px;
   }
+<<<<<<< HEAD
   .upi-patment-chack input:checked+label .upi-id-content{
     margin-left: -120px !important;
   }
 
+=======
+>>>>>>> bbb5b0d8cb826f0ec10d638d64748266e57b8412
   .upi-patment-chack label .phonepe-btn,
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
