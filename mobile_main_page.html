@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="assets/css/slick.css"></link>
 <!-- ::slike theme css:: -->
 <link rel="stylesheet" href="assets/css/slick-theme.min.css"></link>
-
 <!-- ::style CSS::  -->
 <link rel="stylesheet" href="assets/css/style.css" class="relstyle">
 
@@ -1327,38 +1326,13 @@
             </section>
         </main>
     </div>
-
-
+    <!-- ::jquery library file:: -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- ::biitstrape bundle js:: -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ::slike sliderr js:: -->
     <script src="assets/js/slick.min.js"></script>
-
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.dropdown-submenu a.test').on("click", function (e) {
-                $(this).next('ul').toggle();
-                e.stopPropagation();
-                e.preventDefault();
-            });
-        });
-
-        var btn = $('#button');
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, "300");
-        });
-
-    </script>
+    <!-- ::script js:: -->
     <script src="assets/js/script.js"></script>
 </body>
 
