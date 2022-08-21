@@ -5644,8 +5644,11 @@ padding-top: 4px;
   line-height: 18px;
   color: #000;
   padding-bottom: 4px;
-
 }
+.profile_details_wrapper .details_list li a{
+  color: #000;
+}
+
 /* =========================== End profile css ==================== */
 
 
@@ -6065,7 +6068,7 @@ padding-top: 4px;
 
 /* profile */
 .profile_wrapper .my_account_top .title_my_ac{
-  font-size: 18px ;
+  font-size: 18px;
 }
 
 
@@ -6177,13 +6180,10 @@ padding-top: 4px;
   .upi-id-inner {
     padding: 0px 0px;
   }
-<<<<<<< HEAD
   .upi-patment-chack input:checked+label .upi-id-content{
     margin-left: -120px !important;
   }
 
-=======
->>>>>>> bbb5b0d8cb826f0ec10d638d64748266e57b8412
   .upi-patment-chack label .phonepe-btn,
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
