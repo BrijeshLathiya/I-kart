@@ -5708,6 +5708,9 @@ a.category_items-l {
   color: #000;
 
 }
+.profile_details_wrapper .details_list li a{
+  color: #000;
+}
 
 /* =========================== End profile css ==================== */
 
@@ -6194,7 +6197,7 @@ a.category_items-l {
 
 /* profile */
 .profile_wrapper .my_account_top .title_my_ac{
-  font-size: 18px ;
+  font-size: 18px;
 }
 
 
@@ -6309,17 +6312,11 @@ a.category_items-l {
     padding: 0px 0px;
   }
 
-  .upi-patment-chack input:checked+label .upi-id-content{
-    margin-left: -120px !important;
-  }
-
-
   .upi-patment-chack label .phonepe-btn,
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
     padding: 10px 40px;
   }
-
   .upi-id-inner input {
     padding: 10px 10px;
   }
