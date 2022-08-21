@@ -94,6 +94,7 @@ button {
   padding-bottom: 30px !important;
 }
 
+
 /* begin::scroll bar css*/
 .scrollbar {
   float: left;
@@ -504,6 +505,10 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+}
+
+.delevery-add-radio {
+  display: none !important;
 }
 
 .main-accordion-form .accordion-button:not(.collapsed) .accordion-number-box {
@@ -1007,9 +1012,18 @@ button.accordion-button {
   line-height: 29px;
   color: #ffffff;
   background-color: #3b903f;
+  border: 1px solid transparent;
   padding: 21px 61px;
   margin-left: 20px;
   border-radius: 0;
+  margin-top: 0;
+  transition: .3s;
+}
+
+.upi-id-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--success);
+  color: var(--success);
 }
 
 .upi-id-content {
@@ -2444,6 +2458,7 @@ button.accordion-button {
 
 .main-pdp-section .main-pdp-btns {
   margin: 38px 0 0 55px;
+  text-align: center;
 }
 
 .main-pdp-section .main-pdp-btns a {
@@ -5479,6 +5494,10 @@ a.category_items-l {
   font-size: 40px;
 }
 
+.mobile_main_title_bg {
+  background-image: url(../images/mobile_main_banner.png);
+}
+
 /*======================End mobile_main page ====================== */
 
 
@@ -5579,8 +5598,123 @@ a.category_items-l {
   padding-bottom: 20px;
 }
 
-
 /* =========================== end Main Footer Css ==================== */
+
+/* =========================== Start Login css ==================== */
+
+.login_main {
+  background-color: #ECF5F3;
+  max-width: 1066px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff !important;
+  background: linear-gradient(90deg, rgba(94, 235, 207, 0.95) 1.27%, rgba(255, 255, 255, 0) 95.92%);
+  filter: drop-shadow(4px 6px 100px #4D7C73);
+  border-radius: 20px;
+  padding: 100px 100px;
+}
+
+.login_main .close_img_but {
+  background-color: transparent;
+  border: transparent;
+}
+
+.login_main .login_main_info .logo_img_login {
+  max-width: 300px;
+  width: 100%;
+}
+
+.login_main .login_main_info .login_form input {
+  max-width: 245px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 70px;
+  border: 2px solid #fff;
+  font-size: 12px;
+}
+
+.login_main .login_main_info .login_form {
+  padding-left: 100px;
+  flex: 1;
+}
+
+.login_main .login_main_info .login_form input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid #A2CDC5;
+  transition: ease-in-out;
+}
+
+.login_form .btn_login_get_opt {
+  background: #A2CDC5;
+  border-radius: 70px;
+  padding: 6px 20px;
+  border: 2px solid #A2CDC5;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login_form .btn_login_get_opt:hover {
+  background: transparent;
+  border: 2px solid #A2CDC5;
+  color: #A2CDC5;
+}
+
+.login_img_form_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* =========================== End Login css ==================== */
+
+/* =========================== Start profile css ==================== */
+.bg_on_body {
+  background-color: #ECF5F3;
+  padding: 50px 0;
+}
+
+.profile_wrapper {
+  background-color: #fff;
+  border-bottom: 1px #CCCCCC solid;
+}
+
+.profile_wrapper .my_account_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile_wrapper .email_or_profile_img_main {
+  display: flex;
+  align-items: center;
+}
+
+.profile_wrapper .email_or_profile_img_main .email_profile {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #848484;
+}
+
+.profile_wrapper .email_or_profile_img_main .user_name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+}
+
+/* =========================== End profile css ==================== */
+
+
 
 
 
@@ -5649,6 +5783,16 @@ a.category_items-l {
   .main-pdp-section .main-pdp-btns {
     text-align: center;
 
+  }
+
+  /* login */
+  .login_main .login_main_info .logo_img_login {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .login_main {
+    padding: 80px 100px;
   }
 
 }
@@ -6001,6 +6145,7 @@ a.category_items-l {
   }
 
   /* deals-of-the-day */
+
   .deals-of-the-day-page .today-deals-section .migh-interested-slider,
   .top-offers-page .today-deals-section .migh-interested-slider {
     align-items: center;
@@ -6011,7 +6156,60 @@ a.category_items-l {
     padding: 40px;
   }
 
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+  .top-offers-page .today-deals-section .migh-interested-col {
+    width: 30%;
+  }
 
+  .deals-of-the-day-page .today-deals-section .migh-interested-slider,
+  .top-offers-page .today-deals-section .migh-interested-slider {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .migh-interested-section .migh-interested-container {
+    padding: 40px;
+  }
+
+  /* login */
+  .login_main .login_main_info .logo_img_login {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .login_main {
+    padding: 15px;
+  }
+
+  .login_img_form_main {
+    display: block;
+  }
+
+  .login_main .login_main_info .login_form input {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .login_form .login_center_mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+@media screen and (max-width: 575px) {
+  .login_main .login_main_info .logo_img_login {
+    max-width: 100px;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .login_main .login_main_info .login_form {
+    padding-left: 0;
+    max-width: 90%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -6354,142 +6552,144 @@ a.category_items-l {
   }
 
   .migh-interested-section .migh-interested-container {
-    padding: 30px;
+
+    padding: 0 30px;
   }
-}
-
-/*================================================================== */
-/* End Home page Media CSS */
-/*================================================================== */
 
 
+  /*================================================================== */
+  /* End Home page Media CSS */
+  /*================================================================== */
 
 
 
-.migh-interested-section .cart-interested-slider .slick-arrow {
-  background-color: #fff;
-}
 
-.like-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
 
-/*====================== Start Form page Media CSS ====================== */
+  .migh-interested-section .cart-interested-slider .slick-arrow {
+    background-color: #fff;
+  }
 
-.use-this-address-inner {
-  background-color: #fff;
-  padding: 14px 20px 30px;
-}
+  .like-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
 
-.address-item {
-  background-color: rgba(162, 205, 197, 0.3);
-  padding: 20px 30px 30px 70px;
-}
+  /*====================== Start Form page Media CSS ====================== */
 
-.use-this-content h3 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-}
+  .use-this-address-inner {
+    background-color: #fff;
+    padding: 14px 20px 30px;
+  }
 
-.address-item label {
-  width: 100%;
-}
+  .address-item {
+    background-color: rgba(162, 205, 197, 0.3);
+    padding: 20px 30px 30px 70px;
+  }
 
-.edit-address {
-  color: #3B903F;
-}
+  .use-this-content h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
 
-.use-this-content h3:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -52px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
-  transform: translateY(-50%);
-}
+  .address-item label {
+    width: 100%;
+  }
 
-.use-this-content h3::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -46px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: #4FC6AF;
-  transform: translateY(-50%);
-  opacity: 0;
-}
+  .edit-address {
+    color: #3B903F;
+  }
 
-.address-item label input:checked~.use-this-content h3::after {
-  opacity: 1;
-}
+  .use-this-content h3:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -52px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    transform: translateY(-50%);
+  }
 
-.use-this-content p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 15px 0 32px;
-  max-width: 426px;
-  width: 100%;
-}
+  .use-this-content h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -46px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #4FC6AF;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
 
-.use-this-content h6 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-}
+  .address-item label input:checked~.use-this-content h3::after {
+    opacity: 1;
+  }
 
-.address-item:not(:last-of-type) {
-  margin-bottom: 2px;
-}
+  .use-this-content p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px 0 32px;
+    max-width: 426px;
+    width: 100%;
+  }
 
-.add-new-address-btn a .add-new-address-inner {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  color: #4FC6AF;
-}
+  .use-this-content h6 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
 
-.add-new-address-btn a {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
+  .address-item:not(:last-of-type) {
+    margin-bottom: 2px;
+  }
 
-.add-new-address-btn .add-new-address-icon {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  color: #4FC6AF;
-  margin-right: 10px;
-}
+  .add-new-address-btn a .add-new-address-inner {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #4FC6AF;
+  }
 
-.deliver-here-btn a {
-  background-color: #3B903F;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #FFFFFF;
-  padding: 22px 40px;
-}
+  .add-new-address-btn a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 
-.deliver-here-btn {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 15px;
+  .add-new-address-btn .add-new-address-icon {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #4FC6AF;
+    margin-right: 10px;
+  }
+
+  .deliver-here-btn a {
+    background-color: #3B903F;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding: 22px 40px;
+  }
+
+  .deliver-here-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
 }
 
 /* ====================== End Form page Media CSS ====================== */
