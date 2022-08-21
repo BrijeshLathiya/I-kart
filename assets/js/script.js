@@ -124,15 +124,24 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 1540,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
+          slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 767,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
         }
       }
     ]
