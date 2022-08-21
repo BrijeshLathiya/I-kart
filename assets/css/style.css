@@ -5619,6 +5619,7 @@ a.category_items-l {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
 .profile_wrapper .email_or_profile_img_main{
@@ -5632,15 +5633,18 @@ font-weight: 400;
 font-size: 14px;
 line-height: 18px;
 color: #848484;
+padding-top: 4px;
 }
 
 .profile_wrapper  .email_or_profile_img_main .user_name{
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 18px;
-color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+  padding-bottom: 4px;
+
 }
 /* =========================== End profile css ==================== */
 
@@ -6059,6 +6063,11 @@ color: #000;
   justify-content: center;
 }
 
+/* profile */
+.profile_wrapper .my_account_top .title_my_ac{
+  font-size: 18px ;
+}
+
 
 }
 
@@ -6168,7 +6177,7 @@ color: #000;
   .upi-id-inner {
     padding: 0px 0px;
   }
-  ..upi-patment-chack input:checked+label .upi-id-content{
+  .upi-patment-chack input:checked+label .upi-id-content{
     margin-left: -120px !important;
   }
 
