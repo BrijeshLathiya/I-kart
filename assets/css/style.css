@@ -4080,6 +4080,7 @@ button.accordion-button {
 .today-deals-section .migh-interested-image {
   background-color: #fff;
   border-radius: 12px 12px 0 0;
+  margin: 0 10px;
 }
 
 .today-deals-section .migh-interested-image img {
@@ -6310,6 +6311,7 @@ a.category_items-l {
   .upi-id-inner input {
     padding: 10px 10px;
   }
+
   .upi-id-inner {
     justify-content: center;
   }
