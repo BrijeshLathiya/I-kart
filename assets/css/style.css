@@ -92,38 +92,6 @@ button {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
 }
-/* begin::scroll bar css*/
-.scrollbar
-{
-	float: left;
-	height: 200px;
-	overflow-y: auto;
-  margin-right: 10px;
-}
-
-.force-overflow
-{
-	min-height: 300px;
-
-}
-
-#style-4::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-
-#style-4::-webkit-scrollbar
-{
-	width: 5px;
-	background-color: var(--success);
-}
-
-#style-4::-webkit-scrollbar-thumb
-{
-	background-color: var(--themegreen);
-  border-radius: 50px;
-}
 
 
 /*============== End Default CSS ==============*/
@@ -508,7 +476,9 @@ button {
   font-size: 18px;
   line-height: 22px;
 }
-
+.delevery-add-radio{
+  display: none !important;
+}
 .main-accordion-form .accordion-button:not(.collapsed) .accordion-number-box {
   background-color: #fff;
   color: #000;
@@ -1010,11 +980,18 @@ button.accordion-button {
   line-height: 29px;
   color: #ffffff;
   background-color: #3b903f;
+  border: 1px solid transparent;
   padding: 21px 61px;
   margin-left: 20px;
   border-radius: 0;
+  margin-top: 0;
+  transition: .3s;
 }
-
+.upi-id-btn:hover{
+  background-color: transparent;
+  border: 1px solid var(--success);
+  color: var(--success);
+}
 .upi-id-content {
   display: none;
 }
@@ -2445,6 +2422,7 @@ button.accordion-button {
 
 .main-pdp-section .main-pdp-btns {
   margin: 38px 0 0 55px;
+  text-align: center;
 }
 
 .main-pdp-section .main-pdp-btns a {
@@ -6189,6 +6167,9 @@ color: #000;
 
   .upi-id-inner {
     padding: 0px 0px;
+  }
+  ..upi-patment-chack input:checked+label .upi-id-content{
+    margin-left: -120px !important;
   }
 
   .upi-patment-chack label .phonepe-btn,
