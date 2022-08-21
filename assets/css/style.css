@@ -6168,10 +6168,6 @@ color: #000;
   .upi-id-inner {
     padding: 0px 0px;
   }
-  ..upi-patment-chack input:checked+label .upi-id-content{
-    margin-left: -120px !important;
-  }
-
   .upi-patment-chack label .phonepe-btn,
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
