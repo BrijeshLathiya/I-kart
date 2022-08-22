@@ -4125,9 +4125,9 @@ button.accordion-button {
   padding: 5px 30px;
 }
 
-.featured-brands-section .featured-brands-row .slick-list {
+/* .featured-brands-section .featured-brands-row .slick-list {
   padding-right: 421px !important;
-}
+} */
 
 .featured-brands-section .featured-brands-row .slick-arrow.slick-disabled {
   display: none !important;

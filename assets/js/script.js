@@ -159,16 +159,6 @@ $(document).ready(function () {
         }
       }
     ]
-  })
-
-  $('.featured-brands-row').slick({
-    centerMode: false,
-    arrows: true,
-    dots: false,
-    autoplay: true,
-    speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
   });
 });
 $(document).ready(function () {
@@ -179,6 +169,37 @@ $(document).ready(function () {
   $('.enter-pin-close-btn a').click(function () {
     $('.main-enter-pin').removeClass("active");
   });
+
+  $('.featured-brands-row').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplaySpeed: 2000,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+
 });
 
 $(document).ready(function () {
