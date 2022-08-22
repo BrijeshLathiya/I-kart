@@ -3743,8 +3743,10 @@ button.accordion-button {
   margin-top: 15px;
 }
 
+
 /*==================== End All Mobile Page ===============*/
-/*==================== start men's wear Page ===============*/
+/*==================== Start mens wear Page ===============*/
+
 .product-item {
   background: #FFFFFF;
   box-shadow: 0px 0px 42px rgba(0, 0, 0, 0.12);
@@ -3835,7 +3837,82 @@ button.accordion-button {
   margin-top: 2px !important;
 }
 
-/*==================== end men's wear Page ===============*/
+/* mobile filter */
+
+.btn_categories_filter{
+  display: none;
+}
+.filter_mobile_main{
+
+}
+
+
+.main_menu
+{
+  max-width: 350px;
+  width: 100%;
+  height: 100vh;
+  background-color: #E3F3F0;
+}
+.main_menu li
+{
+    background-color: #000;
+    position: relative;
+}
+.main_menu li:hover
+{
+    background-color: #00b;
+    position: relative;
+}
+    
+.main_menu li a
+{
+    display: block;
+    padding: 10px 30px;
+    color: white;
+}
+.main_menu li:hover a
+{
+    display: block;
+    padding: 10px 30px;
+    border-radius: 2px;
+} 
+
+.sub_menu 
+{
+    position: absolute;
+    top: 0;
+    left:100%; 
+    display: none;
+}
+.sub_menu li 
+{
+    display: block;
+    background-color: rgb(255, 115, 115);
+    color: #000;
+    position: relative;
+    /* position: absolute;
+    top: 100%;
+    left:0; 
+    display: none; */
+}
+.sub_menu li:hover
+{
+    background-color: #165;
+    color: brown;
+}
+.main_menu li:hover .sub_menu
+{
+    display: block;
+    background-color: rgb(255, 202, 58);
+}
+
+
+
+
+
+
+/*==================== End mens wear Page ===============*/
 
 
 /*====================== start offer and home page css ====================== */
@@ -6074,15 +6151,18 @@ a.category_items-l {
   .categories-filter-section .right-brand-item h6 {
     font-size: 18px;
   }
+
+  
+
 }
 @media screen and (max-width: 1024px) {
+
   .container {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
   }
-
   .main-wrapper {
     height: 100%;
   }
@@ -6096,6 +6176,7 @@ a.category_items-l {
   .footer_main p {
     font-size: 12px;
   }
+
 
   /* order placed */
   .main-nav .navbar-nav .nav-link {
@@ -6127,6 +6208,14 @@ a.category_items-l {
   .migh-interested-section .migh-interested-image {
     padding-top: 71%;
   }
+  /* Mens-top-wear */
+  .categories-filter-left-col{
+    display: none;
+  }
+  .btn_categories_filter{
+    display: block;
+  }
+  
 
 
 
@@ -6153,7 +6242,6 @@ a.category_items-l {
   }
 
   /* All Mobile */
-
   .categories-filter-left-col {
     display: none;
   }
@@ -6162,6 +6250,7 @@ a.category_items-l {
     flex: 1;
     width: 100%;
   }
+
 }
 @media screen and (max-width: 768px) {
   .main-accordion-form .accordion-button h2 {
@@ -6754,6 +6843,7 @@ a.category_items-l {
     padding: 30px;
   }
 }
+
 /*================================================================== */
 /* End Home page Media CSS */
 /*================================================================== */
