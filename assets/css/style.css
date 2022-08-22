@@ -5623,6 +5623,7 @@ a.category_items-l {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
+  max-width: 100px;
 }
 
 .login_form .btn_login_get_opt:hover {
@@ -5631,15 +5632,40 @@ a.category_items-l {
   color: #A2CDC5;
 }
 
+.logout_main{
+  padding: 25px 0 !important;
+  background-color: #fff;
+}
 .login_img_form_main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+.log_out_btn_text:hover{
+  opacity: 1;
+  color: #DB0B0B !important;
+}
+.log_out_btn_text{
+  color: #DB0B0B;
+  display: flex;
+  opacity: 0.7;
+}
 
 
 /* =========================== End Login css ==================== */
+
+/* =========================== Start about css ==================== */
+.about_list_title{
+  flex: 1;
+}
+.details_about{
+  font-style: 14px;
+  line-height: 100%;
+}
+
+/* =========================== End about css ==================== */
+
 
 /* =========================== Start profile css ==================== */
 .bg_on_body {
@@ -5685,8 +5711,7 @@ a.category_items-l {
 .profile_details_wrapper{
   background-color: #fff;
 }
-.profile_details_wrapper>div{
-  padding: 30px 0px;
+
 }
 .profile_details_wrapper .details_list li{
   padding: 0;
@@ -5729,6 +5754,31 @@ a.category_items-l {
 .profile-logout-btn:hover{
   color: #DB0B0B;
   opacity: .6;
+}
+.profile_details_wrapper .my_order_list .order_icons_profile{
+  padding-right: 8px;
+  flex: 1;
+  max-width: 28px;
+  width: 100%;
+}
+
+/* profile foter */
+.border_on_profile_bottom{
+  border: solid 1px #BDE7DF;
+}
+
+.footer_profile_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 40px 0;
+}
+.footer_profile_main .policies_footer_profile{
+  font-size: 14px;
+}
+ .save_btn_profile{
+  display: flex;
+  justify-content: center;
+  padding:20px 0;
 }
 
 /* =========================== End profile css ==================== */
@@ -5864,6 +5914,36 @@ a.category_items-l {
 }
 /* =========================== end::reffrel page ==================== */
 
+
+
+/* =========================== Start email address profile css ==================== */
+.email_address_main_profile{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding: 20px 0;
+}
+.email_address_main_profile input{
+  max-width: 245px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 70px;
+  border: 2px solid #fff;
+  background-color: #F6FAF9;
+}
+.email_address_main_profile input:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid #A2CDC5;
+  transition: ease-in-out;
+  background-color: #F6FAF9;
+
+}
+.email_address_details_profile{
+  display: flex;
+}
+
+/* =========================== end email address profile css ==================== */
 
 
 
@@ -6056,11 +6136,7 @@ a.category_items-l {
   .migh-interested-section .migh-interested-image {
     padding-top: 71%;
   }
-  /* reffer page */
-  .reffer-code-main{
-    margin-top: 30px;
-    margin-left: 250px;
-  }
+
 
 
 }
@@ -6364,6 +6440,10 @@ a.category_items-l {
     padding-left: 0;
     max-width: 90%;
     margin: auto;
+  }
+  /* email address */
+  .email_address_details_profile{
+    display:block;
   }
 }
 @media screen and (max-width: 425px) {
