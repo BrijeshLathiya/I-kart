@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>About</title>
+    <title>email</title>
+
     <!-- ::Boot-Strap CSS:: -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- slike  css -->
@@ -14,9 +15,10 @@
     <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-
-    <!--Start profile page -->
-    <section class="bg_on_body">
+</head>
+<body class="main-commen-page">
+    <!--begin::profile page -->
+    <section class="bg_on_body ">
             <!--begin:: header -->
             <div class="container profile_wrapper">
                 <div class="row ">
@@ -40,29 +42,36 @@
             </div>
             <!--end:: header -->
             <!-- begin:: body -->
-            <div class="container profile_details_wrapper py-5">
+            <div class="container profile_details_wrapper">
                 <!-- begin:: body contant -->
-                <div class="row ">
-                    <div class="col-xxl-12 ">
-                        <ul class="details_list justify-content-center d-flex">
-                            <li class="about-contant">
-                                <div class="main_single_item d-xl-flex  ">
-                                    <h4 class="item_title  col-xxl-2 col-lg-12 mb-2">About Us:- </h4>
-                                    <p class="col-lg-12 col-xxl-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                </div>
-                                <div class="main_single_item d-xl-flex  ">
-                                    <h4 class="item_title  col-xxl-2 col-lg-12 mb-2">Tems and Condition:- </h4>
-                                    <p class="col-xxl-10 col-lg-12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
-                                </div>
-                                <div class="main_single_item d-xl-flex  ">
-                                    <h4 class="item_title col-xxl-2 col-lg-12 mb-2">Privacy Policy:-</h4>
-                                    <p class="col-xxl-10 col-lg-12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text  </p>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-6 col-lg-6 ">
+                        <ul class="details_list">
+                            <li>
+                                <div class="main_single_item d-flex  ">
+                                    <h4 class="item_title pe-3"> Phone Number:- </h4>
+                                    <div class="email-add-fild">
+                                        <input type="email" name="email" placeholder="1234567890" class="mb-3">
+                                        <div class="enter-new-email-fild d-flex pb-3">
+                                            <input type="email" name="email" placeholder="Enter New Phone number">
+                                            <button class="pro-getOtp-btn ">Get OTP</button>
+                                        </div>
+                                        <div class="enter-new-email-fild d-flex ">
+                                            <input type="email" name="email" placeholder="Enter OTP">
+                                            <button class="pro-getOtp-btn px-5">Verify</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- end:: body contant -->
+                <!-- begin:: save button -->
+                <div class="profile-page-save-button text-center">
+                    <button type="submit" name="save" class="profile-btn">save</button>
+                </div>
+                <!-- end:: save button -->
                 <!-- begin:: save button -->
                 <div class="profile-logout">
                     <div>
@@ -90,7 +99,8 @@
                 </div>
             </footer>
             <!-- end:: footer -->
-    </section>    
+    </section>
+    <!--end::profile page -->
 
     <!--jquery library -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>

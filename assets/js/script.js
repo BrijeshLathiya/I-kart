@@ -35,6 +35,9 @@ $(document).ready(function () {
   });
 });
 
+
+
+
 /*********  Main PDP Slick  *********/
 $(document).ready(function () {
   $('.main-pdp-slider').slick({
@@ -179,6 +182,14 @@ $(document).ready(function () {
   $('.enter-pin-close-btn a').click(function () {
     $('.main-enter-pin').removeClass("active");
   });
+
+  
+  // on click copy the content from #copy-id to clipboard
+  document.querySelector("#click-to-copy").addEventListener("click", (e) => {
+    let value = document.querySelector("#copy-id");
+    value.select();
+    document.execCommand("copy");
+    });
 });
 
 $(document).ready(function () {
@@ -245,9 +256,6 @@ $(document).ready(function () {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
