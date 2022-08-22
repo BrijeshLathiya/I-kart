@@ -877,9 +877,18 @@
                        <div class="filter_mobile_main">
                         <ul class="main_menu">
                             <li>
-                                <a href="#">Home</a>
-                                <ul class="sub_menu">
-                                    <li><a href="#">peta_menu_1</a></li>
+                                <button onclick="onclickBtn()" class="button_filter">Home</button>
+                                <ul class="example sub_menu">
+                                    <li class=""><a href="#">peta_menu_1</a></li>
+                                    <li><a href="#">peta_menu_2</a></li>
+                                    <li><a href="#">peta_menu_3</a></li>
+                                    <li><a href="#">peta_menu_5</a></li>
+                                </ul>
+                            </li>        
+                            <li>
+                                <button onclick="onclickBtn()" class="button_filter">Home2</button>
+                                <ul class="example sub_menu">
+                                    <li class=""><a href="#">peta_menu_1</a></li>
                                     <li><a href="#">peta_menu_2</a></li>
                                     <li><a href="#">peta_menu_3</a></li>
                                     <li><a href="#">peta_menu_5</a></li>
@@ -3539,6 +3548,8 @@
         </div>
     </section>
     
+
+
     <!--jquery library -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Scripts to be loaded  -->
@@ -3549,6 +3560,15 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- Main Activation JS -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+        $(document).ready(function onclickBtn(){
+                $(".button_filter").click(function(){
+                    $(".example ").addClass("sub_menu_show")
+                });
+
+        });
+    </script>
 </body>
 
 </html>

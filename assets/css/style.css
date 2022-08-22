@@ -3847,66 +3847,64 @@ button.accordion-button {
 }
 
 
-.main_menu
+.filter_mobile_main .main_menu
 {
   max-width: 350px;
   width: 100%;
   height: 100vh;
   background-color: #E3F3F0;
 }
-.main_menu li
+.filter_mobile_main .main_menu li
 {
     background-color: #000;
     position: relative;
 }
-.main_menu li:hover
+.filter_mobile_main .main_menu li:hover
 {
     background-color: #00b;
     position: relative;
 }
     
-.main_menu li a
+.filter_mobile_main .main_menu li a
 {
     display: block;
     padding: 10px 30px;
     color: white;
 }
-.main_menu li:hover a
+.filter_mobile_main .main_menu li:hover a
 {
     display: block;
     padding: 10px 30px;
     border-radius: 2px;
 } 
 
-.sub_menu 
+.filter_mobile_main .sub_menu 
 {
     position: absolute;
     top: 0;
     left:100%; 
     display: none;
 }
-.sub_menu li 
+.filter_mobile_main .sub_menu li 
 {
     display: block;
     background-color: rgb(255, 115, 115);
     color: #000;
     position: relative;
-    /* position: absolute;
-    top: 100%;
-    left:0; 
-    display: none; */
 }
-.sub_menu li:hover
+.filter_mobile_main .sub_menu li:hover
 {
     background-color: #165;
     color: brown;
 }
-.main_menu li:hover .sub_menu
+.filter_mobile_main .main_menu li:hover .sub_menu
 {
-    display: block;
+    display: none;
     background-color: rgb(255, 202, 58);
 }
-
+.sub_menu_show{
+  display: block !important;
+}
 
 
 
