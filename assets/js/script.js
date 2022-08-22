@@ -35,6 +35,9 @@ $(document).ready(function () {
   });
 });
 
+
+
+
 /*********  Main PDP Slick  *********/
 $(document).ready(function () {
   $('.main-pdp-slider').slick({
@@ -170,6 +173,7 @@ $(document).ready(function () {
     $('.main-enter-pin').removeClass("active");
   });
 
+<<<<<<< HEAD
   $('.featured-brands-row').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -200,6 +204,15 @@ $(document).ready(function () {
     ]
   });
 
+=======
+  
+  // on click copy the content from #copy-id to clipboard
+  document.querySelector("#click-to-copy").addEventListener("click", (e) => {
+    let value = document.querySelector("#copy-id");
+    value.select();
+    document.execCommand("copy");
+    });
+>>>>>>> cd7afcee09f38521e4e36e5299f06b8536cee72c
 });
 
 $(document).ready(function () {
@@ -266,9 +279,6 @@ $(document).ready(function () {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
