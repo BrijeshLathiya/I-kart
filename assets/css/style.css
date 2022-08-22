@@ -5306,7 +5306,7 @@ a.category_items-l {
   left: 0;
   right: 0;
   bottom: 0;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .no_costemi_bg_top {
@@ -5632,21 +5632,24 @@ a.category_items-l {
   color: #A2CDC5;
 }
 
-.logout_main{
+.logout_main {
   padding: 25px 0 !important;
   background-color: #fff;
 }
+
 .login_img_form_main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.log_out_btn_text:hover{
+
+.log_out_btn_text:hover {
   opacity: 1;
   color: #DB0B0B !important;
 }
-.log_out_btn_text{
+
+.log_out_btn_text {
   color: #DB0B0B;
   display: flex;
   opacity: 0.7;
@@ -5656,10 +5659,11 @@ a.category_items-l {
 /* =========================== End Login css ==================== */
 
 /* =========================== Start about css ==================== */
-.about_list_title{
+.about_list_title {
   flex: 1;
 }
-.details_about{
+
+.details_about {
   font-style: 14px;
   line-height: 100%;
 }
@@ -5697,7 +5701,7 @@ a.category_items-l {
   font-size: 14px;
   line-height: 18px;
   color: #848484;
-  padding-top:8px ; 
+  padding-top: 8px;
 }
 
 .profile_wrapper .email_or_profile_img_main .user_name {
@@ -5708,26 +5712,32 @@ a.category_items-l {
   line-height: 18px;
   color: #000;
 }
-.profile_details_wrapper{
+
+.profile_details_wrapper {
   background-color: #fff;
 }
-.profile_details_wrapper .details_list li{
+
+.profile_details_wrapper .details_list li {
   padding: 0;
 }
-.profile_details_wrapper .details_list li a{
+
+.profile_details_wrapper .details_list li a {
   color: #000;
   padding: 12px 20px;
   display: block;
 }
-.gender-select:hover{
-  background-color: rgba(124, 124, 124, 0.1) ;
+
+.gender-select:hover {
+  background-color: rgba(124, 124, 124, 0.1);
   padding: 0px 10px;
   border-radius: 50px;
 }
-.item_title span{
+
+.item_title span {
   padding-right: 10px;
 }
-.profile-btn{
+
+.profile-btn {
   border: none;
   outline: none;
   background-color: var(--themegreen);
@@ -5738,22 +5748,26 @@ a.category_items-l {
   font-family: Rasa;
   transition: .3s;
 }
-.profile-btn:hover{
+
+.profile-btn:hover {
   background-color: var(--themegreen);
   opacity: .8;
 }
-.profile-logout-btn{
+
+.profile-logout-btn {
   color: #DB0B0B;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
 }
-.profile-logout-btn:hover{
+
+.profile-logout-btn:hover {
   color: #DB0B0B;
   opacity: .6;
 }
-.profile_details_wrapper .my_order_list .order_icons_profile{
+
+.profile_details_wrapper .my_order_list .order_icons_profile {
   padding-right: 8px;
   flex: 1;
   max-width: 28px;
@@ -5761,7 +5775,7 @@ a.category_items-l {
 }
 
 /* profile foter */
-.border_on_profile_bottom{
+.border_on_profile_bottom {
   border: solid 1px #BDE7DF;
 }
 
@@ -5770,25 +5784,28 @@ a.category_items-l {
   justify-content: space-between;
   padding: 30px 0 40px 0;
 }
-.footer_profile_main .policies_footer_profile{
+
+.footer_profile_main .policies_footer_profile {
   font-size: 14px;
 }
- .save_btn_profile{
+
+.save_btn_profile {
   display: flex;
   justify-content: center;
-  padding:20px 0;
+  padding: 20px 0;
 }
 
 /* =========================== End profile css ==================== */
 /* =========================== begin::email page ==================== */
-.email-add-fild input{
+.email-add-fild input {
   border: none;
   outline: none;
   background: rgba(162, 205, 197, 0.1);
   border-radius: 70px;
   padding: 10px 20px;
 }
-.pro-getOtp-btn{
+
+.pro-getOtp-btn {
   background-color: var(--themegreen);
   color: var(--white);
   padding: 10px 40px;
@@ -5798,9 +5815,11 @@ a.category_items-l {
   border-radius: 50px;
   margin-left: 10px;
 }
-.pro-getOtp-btn:hover{
+
+.pro-getOtp-btn:hover {
   opacity: .7;
 }
+
 /* =========================== end:: email page ==================== */
 /* =========================== end:: gender page ==================== */
 [type="radio"]:checked,
@@ -5808,8 +5827,9 @@ a.category_items-l {
   position: absolute;
   left: -9999px;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -5817,8 +5837,9 @@ a.category_items-l {
   display: inline-block;
   color: #666;
 }
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -5829,8 +5850,9 @@ a.category_items-l {
   background: var(--white);
   box-shadow: 2px 2px 10px rgba(114, 114, 114, 0.2);
 }
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
   content: "";
   width: 12px;
   height: 12px;
@@ -5842,12 +5864,14 @@ a.category_items-l {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-[type="radio"]:not(:checked) + label:after {
+
+[type="radio"]:not(:checked)+label:after {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
-[type="radio"]:checked + label:after {
+
+[type="radio"]:checked+label:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -5855,47 +5879,62 @@ a.category_items-l {
 
 /* =========================== end:: gender page ==================== */
 /* =========================== begin:: about page ==================== */
-.about-contant div{
+.about-contant div {
   margin-bottom: 20px;
 }
+
 /* =========================== end:: about page ==================== */
 /* =========================== begin:: reffrl page ==================== */
-.get-reffrl{
+.get-reffrl {
   font-family: 'Niramit';
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   color: #4D7C73;
   line-height: 45px;
-}.reffer-code-main{
+}
+
+.reffer-code-main {
   margin-top: 70px;
   background-color: var(--white);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 70px;
   width: fit-content;
   padding: 20px 50px;
-}.reffer-code-main div{
+}
+
+.reffer-code-main div {
   font-weight: 500;
   font-size: 40px;
-}.reffer-code-main div:nth-child(2){
+}
+
+.reffer-code-main div:nth-child(2) {
   color: var(--themegreen);
   font-weight: 600;
-}.reffer-code{
+}
+
+.reffer-code {
   height: fit-content;
   border: none;
   outline: none;
   line-height: 25px;
-}.send-invitetion{
+}
+
+.send-invitetion {
   font-style: normal;
   font-weight: 500;
   font-size: 50px;
-}.invitation-code{
+}
+
+.invitation-code {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
   padding: 50px 40px;
-}.copy-btn{
+}
+
+.copy-btn {
   background-color: var(--themegreen);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -5904,22 +5943,28 @@ a.category_items-l {
   margin-left: 10px;
   border: none;
   outline: none;
-}.send-invitation-main{
+}
+
+.send-invitation-main {
   margin-top: 30px;
-}.referCode-border{
+}
+
+.referCode-border {
   border: 1px solid var(--themegreen);
   padding: 10px 0px;
 }
+
 /* =========================== end::reffrel page ==================== */
 
 /* =========================== Start email address profile css ==================== */
-.email_address_main_profile{
+.email_address_main_profile {
   width: 100%;
   display: flex;
   justify-content: start;
   padding: 20px 0;
 }
-.email_address_main_profile input{
+
+.email_address_main_profile input {
   max-width: 245px;
   width: 100%;
   background: #FFFFFF;
@@ -5927,7 +5972,8 @@ a.category_items-l {
   border: 2px solid #fff;
   background-color: #F6FAF9;
 }
-.email_address_main_profile input:focus{
+
+.email_address_main_profile input:focus {
   outline: none !important;
   box-shadow: none !important;
   border: 2px solid #A2CDC5;
@@ -5935,9 +5981,11 @@ a.category_items-l {
   background-color: #F6FAF9;
 
 }
-.email_address_details_profile{
+
+.email_address_details_profile {
   display: flex;
 }
+
 /* =========================== end email address profile css ==================== */
 
 /*================================================================== */
@@ -5950,6 +5998,7 @@ a.category_items-l {
     justify-content: left;
   }
 }
+
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 1320px;
@@ -6017,6 +6066,7 @@ a.category_items-l {
   }
 
 }
+
 @media screen and (max-width: 1366px) {
   .categories-filter-section .right-brand-item {
     padding: 0 20px;
@@ -6034,6 +6084,7 @@ a.category_items-l {
     left: 20px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -6075,6 +6126,7 @@ a.category_items-l {
     font-size: 18px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 980px;
@@ -6131,6 +6183,7 @@ a.category_items-l {
 
 
 }
+
 @media screen and (max-width: 980px) {
 
   .container {
@@ -6163,6 +6216,7 @@ a.category_items-l {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .main-accordion-form .accordion-button h2 {
     font-size: 14px;
@@ -6412,14 +6466,31 @@ a.category_items-l {
     display: flex;
     justify-content: center;
   }
-    /* reffer page */
-    .reffer-code-main{
-      margin-top: 30px;
-      margin-left: 120px;
-    }
 
+  /* reffer page */
+  .reffer-code-main {
+    margin-top: 30px;
+    margin-left: 120px;
+  }
+
+  .mobile_name_main_page {
+    font-size: 24px;
+  }
+
+  .info_tag_line_mobile_card {
+    font-size: 16px;
+  }
+
+  .just_price_mobile_card {
+    font-size: 20px;
+  }
+
+  /* .mobile_image_maina_mobile_page {
+    padding-top: 41%;
+  } */
 
 }
+
 @media screen and (max-width: 575px) {
   .login_main .login_main_info .logo_img_login {
     max-width: 100px;
@@ -6432,185 +6503,289 @@ a.category_items-l {
     max-width: 90%;
     margin: auto;
   }
+
   /* email address */
-  .email_address_details_profile{
-    display:block;
+  .email_address_details_profile {
+    display: block;
+  }
+
+  .mobile_image_maina_mobile_page {
+    max-width: 100px;
+  }
+
+  .ps-2.pb-4.pt-5.mt-4 {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .mobile_name_main_page {
+    font-size: 20px;
+  }
+
+  .info_tag_line_mobile_card {
+    font-size: 12px;
+  }
+
+  .just_price_mobile_card {
+    font-size: 16px;
+  }
+
+  .no_costemi_bg_top {
+    font-size: 10px;
+  }
+
+  .main-mobile-left {
+    padding: 15px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .logo-main {
     display: flex;
     justify-content: center;
   }
+
   .form-main-input {
     display: block;
   }
+
   .form-main-input input,
   .form-main-input .select-box {
     width: 100%;
   }
+
   .form-main-input {
     padding-right: 0px;
   }
+
   .form-main-content {
     padding-left: 0px;
     padding-right: 20px;
   }
+
   .form-main-btn .btn {
     font-size: 16px;
     padding: 15px 30px;
   }
+
   .add-address-chack label {
     font-size: 16px;
   }
+
   .main-accordion-form .accordion-button:not(.collapsed) .change-btn .btn {
     font-size: 14px !important;
   }
+
   .main-accordion-form .accordion-button h2 {
     width: 80px;
   }
+
   .main-min-cart .main-cart-item {
     padding: 40px 0px;
   }
+
   .main-min-cart .main-title-code {
     padding: 13px 0px;
   }
+
   .custum_padding {
     padding: 0px;
   }
+
   .min-cart-right-col {
     padding: 0px 0px;
     margin-top: 20px;
   }
+
   .main-min-cart .min-cart-left-col {
     padding: 0px 30px;
   }
+
   .place-order-content .btn {
     font-size: 16px;
   }
+
   .place-order-content .btn {
     padding: 16px;
   }
+
   .place-order-content {
     box-shadow: none;
   }
+
   .main-min-cart .min-cart-accordian {
     padding: 0px 0px;
   }
+
   /* payment option */
   .cash-delivery-inner {
     margin-top: 20px;
   }
+
   .patment-options-content {
     padding: 30px 20px;
   }
+
   .upi-payment-content {
     margin-left: -55px;
   }
+
   .upi-id-inner {
     padding: 0px 0px;
   }
+
   .upi-patment-chack label .phonepe-btn,
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
     padding: 10px 40px;
   }
+
   .upi-id-inner input {
     padding: 10px 10px;
   }
+
   .upi-id-inner {
     justify-content: center;
   }
+
   .upi-id-inner button {
     margin: 0px;
     padding: 10px;
   }
+
   .upi-id-inner button {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     transition: 0.3s;
     cursor: pointer;
   }
+
   .upi-id-inner button:hover {
     background-color: #3b903f !important;
     color: #fff;
   }
+
   .order-confirmation-inner .btn {
     text-align: center;
     margin-top: 10px;
     margin-right: auto;
   }
+
   .delivery-popup-inner {
     padding: 15px 15px;
   }
+
   .delivery-popup-inner p,
   .delivery-popup-inner .note {
     font-size: 16px;
   }
+
   .delivery-popup-inner h3 {
     font-size: 24px;
   }
+
   .change-btn .btn:hover {
     padding: 9px 15px;
     font-size: 16px;
   }
+
   /* my order */
   .order-table {
     padding: 10px 15px;
   }
+
   .my-radio-button {
     margin-top: 15px;
   }
+
   .order-table h4 {
     font-size: 16px;
   }
+
   .my-order-price {
     margin: 15px 20px;
   }
+
   .page-navigation-main {
     font-size: 16px !important;
   }
+
   .single-filter-box {
     /* display: block; */
     margin-bottom: 15px;
     padding: 30px 30px;
   }
+
   .filter-box-main {
     display: block;
   }
+
   .l-radio span {
     font-size: 16px;
   }
+
   .my-order-price {
     margin: 10px 0px 0px 0px;
   }
+
   .order-table {
     padding: 0px;
   }
+
   /* deals-of-the-day */
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 50%;
   }
+
   /* reffer page */
-  .get-reffrl{
+  .get-reffrl {
     font-size: 25px;
     line-height: 24px;
-  }.reffer-code-main div{
+  }
+
+  .reffer-code-main div {
     font-size: 20px;
     margin-bottom: 0 !important;
-  }.reffer-code-main{
+  }
+
+  .reffer-code-main {
     margin-left: 30px;
-  }.send-invitetion{
+  }
+
+  .send-invitetion {
     font-size: 30px;
-  }.reffer-code{
+  }
+
+  .reffer-code {
     font-size: 20px;
     line-height: 20px;
-  }.copy-btn{
+  }
+
+  .copy-btn {
     font-size: 20px;
   }
 
+  .mobile_image_maina_mobile_page {
+    max-width: 80px;
+  }
+
+  .main_info_mobile_card {
+    padding: 15px;
+  }
+
+  .mobile_name_main_page {
+    font-size: 14px;
+} 
+.info_tag_line_mobile_card {
+  font-size: 10px;
 }
+.just_price_mobile_card {
+  font-size: 14px;
+}
+
+}
+
 @media screen and (max-width: 350px) {
   .container {
     width: 100%;
@@ -6754,6 +6929,7 @@ a.category_items-l {
     padding: 30px;
   }
 }
+
 /*================================================================== */
 /* End Home page Media CSS */
 /*================================================================== */
