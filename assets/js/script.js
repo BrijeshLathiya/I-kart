@@ -173,7 +173,6 @@ $(document).ready(function () {
     $('.main-enter-pin').removeClass("active");
   });
 
-<<<<<<< HEAD
   $('.featured-brands-row').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -203,8 +202,6 @@ $(document).ready(function () {
       }
     ]
   });
-
-=======
   
   // on click copy the content from #copy-id to clipboard
   document.querySelector("#click-to-copy").addEventListener("click", (e) => {
@@ -212,7 +209,6 @@ $(document).ready(function () {
     value.select();
     document.execCommand("copy");
     });
->>>>>>> cd7afcee09f38521e4e36e5299f06b8536cee72c
 });
 
 $(document).ready(function () {
