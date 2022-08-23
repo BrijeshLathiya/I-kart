@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- slike  css -->
     <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- on scroll event -->
+    <link rel="stylesheet" href="assets/css/aos.css">
     <!-- style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -31,7 +33,7 @@
     <!-- begin::category filter -->
     <section class="categories-filter-section">
         <div class="categories-filter-row ">
-            <div class="categories-filter-left-col ">
+            <div class="categories-filter-left-col " data-aos="fade-right">
                 <div class="left-filter-btn">
                     <a href="#" class="btn">
                         <span>
@@ -845,7 +847,7 @@
                     </div>
                 </div>
             </div>
-            <div class="categories-filter-right-col">
+            <div class="categories-filter-right-col" data-aos="fade-left">
                 <div class="right-brand-slider">
                     <div class="right-brand-item">
                         <div class="right-brand-image">
@@ -1756,7 +1758,7 @@
                     </ul>
                     <div class="tab_container">
                         <div id="tab1" class="tab_content" style="display: block;">
-                            <div class="categories-filter-item">
+                            <div class="categories-filter-item" >
                                 <div class="categories-item-top">
                                     <div class="categories-item-save">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22"
@@ -4404,8 +4406,13 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!--slike min  -->
     <script src="assets/js/slick.min.js"></script>
+    <!-- on scroll event library -->
+    <script src="assets/js/aos.js"></script>
     <!-- Main Activation JS -->
     <script src="assets/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
