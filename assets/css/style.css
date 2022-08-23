@@ -23,7 +23,7 @@ body {
   background-color: rgba(162, 205, 197, 0.2);
   height: 100%;
   line-height: 22px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .footer-font {
@@ -94,11 +94,7 @@ button {
   padding-bottom: 30px !important;
 }
 
-
 /*============== End Default CSS ==============*/
-
-
-
 /*====================== Start custome home page ====================== */
 .bg_header {
   box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.12);
@@ -162,12 +158,6 @@ button {
 }
 
 /*====================== End custome home page ====================== */
-
-
-
-
-
-
 /*====================== Start Min Cart CSS ====================== */
 .main-min-cart {
   padding: 50px 0 0;
@@ -177,7 +167,6 @@ button {
   width: 100%;
   height: 100%;
 }
-
 
 .main-min-cart .cart-item-left-col {
   max-width: 121px;
@@ -427,14 +416,6 @@ button {
 }
 
 /*====================== End Min Cart  CSS ====================== */
-
-
-
-
-
-
-
-
 
 /*====================== Start Form Section CSS ====================== */
 .main-accordion-form .accordion-item {
@@ -777,12 +758,6 @@ button.accordion-button {
 }
 
 /*======================end form section=====================*/
-
-
-
-
-
-
 
 /*====================== payment option =====================*/
 .patment-options-content {
@@ -1974,7 +1949,6 @@ button.accordion-button {
 }
 
 /*---------- end checkbox css --------*/
-
 .nav-page-main span a {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -2014,7 +1988,6 @@ button.accordion-button {
   padding-top: 50px;
   overflow: hidden;
 }
-
 
 .main-pdp-section .main-pdp-left-col {
   max-width: 618px;
@@ -3014,7 +2987,6 @@ button.accordion-button {
 }
 
 /* Accordion Css Start */
-
 .categories-filter-left-col {
   max-width: 378px;
   width: 100%;
@@ -3208,8 +3180,36 @@ button.accordion-button {
   color: #19191D;
 }
 
-/* Accordion Css End */
+/*begin:: filter responsive css */
+.responsive-filter-btn {
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+}
 
+.responsive-filter-btn .btn h5 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.responsive-filter-btn .btn {
+  padding: 5px 15px;
+}
+
+.responsive-category {
+  background-color: #E3F3F0;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/*end:: filter responsive css */
+
+/* Accordion Css End */
 .categories-filter-row {
   display: flex;
   flex-wrap: wrap;
@@ -3226,7 +3226,7 @@ button.accordion-button {
 }
 
 .categories-filter-section .right-brand-slider {
-  margin: 70px -40px 0;
+  margin: 70px 0px 0;
   padding: 0 62px;
 }
 
@@ -3599,8 +3599,7 @@ button.accordion-button {
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
-  padding: 0 100px 0 72px;
+  padding: 0 70px;
 }
 
 .categories-filter-tabs {
@@ -3744,7 +3743,7 @@ button.accordion-button {
 }
 
 /*==================== End All Mobile Page ===============*/
-/*==================== start men's wear Page ===============*/
+/*==================== Start mens wear Page ===============*/
 .product-item {
   background: #FFFFFF;
   box-shadow: 0px 0px 42px rgba(0, 0, 0, 0.12);
@@ -3835,11 +3834,70 @@ button.accordion-button {
   margin-top: 2px !important;
 }
 
-/*==================== end men's wear Page ===============*/
+/* mobile filter */
+.btn_categories_filter {
+  display: none;
+}
 
+.filter_mobile_main .main_menu {
+  max-width: 350px;
+  width: 100%;
+  height: 100vh;
+  background-color: #E3F3F0;
+}
 
+.filter_mobile_main .main_menu li {
+  background-color: #000;
+  position: relative;
+}
+
+.filter_mobile_main .main_menu li:hover {
+  background-color: #00b;
+  position: relative;
+}
+
+.filter_mobile_main .main_menu li {
+  display: block;
+  padding: 10px 30px;
+  color: white;
+}
+
+.filter_mobile_main .main_menu li:hover a {
+  display: block;
+  padding: 10px 30px;
+  border-radius: 2px;
+}
+
+.filter_mobile_main .sub_menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+
+.filter_mobile_main .sub_menu li {
+  display: block;
+  background-color: rgb(255, 115, 115);
+  color: #000;
+  position: relative;
+}
+
+.filter_mobile_main .sub_menu li:hover {
+  background-color: #165;
+  color: brown;
+}
+
+.filter_mobile_main .main_menu li:hover .sub_menu {
+  display: none;
+  background-color: rgb(255, 202, 58);
+}
+
+.sub_menu_show {
+  display: block !important;
+}
+
+/*==================== End mens wear Page ===============*/
 /*====================== start offer and home page css ====================== */
-
 .main-commen-page {
   background-color: #fff;
 }
@@ -4129,7 +4187,6 @@ button.accordion-button {
 /* .featured-brands-section .featured-brands-row .slick-list {
   padding-right: 421px !important;
 } */
-
 .featured-brands-section .featured-brands-row .slick-arrow.slick-disabled {
   display: none !important;
 }
@@ -4384,10 +4441,7 @@ button.accordion-button {
 
 /*====================== end offre and home page css ====================== */
 
-
 /*======================Start order-palced-cancellation page ====================== */
-
-
 .main-category {
   margin-top: 60px;
   background-color: #ffffff;
@@ -4431,10 +4485,9 @@ li {
   display: grid;
 }
 
-/* .fcategory_image {
+/* .zcategory_image {
   padding: 0px 0px 0px 50px;
 } */
-
 .dropdown-submenu>.dropdown-menu {
   background: #ECF5F3;
   border-radius: 12px !important;
@@ -4507,9 +4560,7 @@ a.wdcategory:hover {
   margin-right: 5px;
 }
 
-
 /* multiple drop-down  */
-
 .dropdown-submenu:hover>.dropdown-menu {
   width: max-content;
   margin-right: 20px;
@@ -4604,7 +4655,6 @@ a.category_items-l {
 
 }
 
-
 .path {
   font-family: 'Inter';
   font-style: normal;
@@ -4641,7 +4691,6 @@ a.category_items-l {
 }
 
 /* Details Box  */
-
 .details-box {
   padding: 30px 62px;
 }
@@ -4944,8 +4993,6 @@ a.category_items-l {
 }
 
 /*Start order placed Pop-Up */
-
-
 .btn_cancel_order_order_placed {
   outline: none !important;
   background: none;
@@ -4961,7 +5008,6 @@ a.category_items-l {
 .btn_cancel_order_order_placed a i {
   font-size: 23px;
 }
-
 
 /* Start cancel Order Popup */
 
@@ -5086,10 +5132,7 @@ a.category_items-l {
 /*End order placed Pop-Up */
 
 /*======================End order-palced-cancellation page ====================== */
-
-
 /*======================Start cancellation page ====================== */
-
 /* cancellation */
 .cancellation-page {
   padding: 50px 0;
@@ -5233,7 +5276,6 @@ a.category_items-l {
 /*======================End cancellation page ====================== */
 
 /*======================Start cancellation page ====================== */
-
 .details-box-cancellation .order-status .row::before {
   content: '';
   display: block;
@@ -5258,9 +5300,7 @@ a.category_items-l {
 /*======================End cancellation page ====================== */
 
 /*======================End mobile_main page ====================== */
-
 /* Start Main Mobile page */
-
 .main-mobile-section,
 .second-main-mobile-section {
   margin: 0;
@@ -5310,6 +5350,7 @@ a.category_items-l {
 }
 
 .no_costemi_bg_top {
+  object-fit: cover;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   text-align: center;
@@ -5407,7 +5448,6 @@ a.category_items-l {
 /* End Main Mobile page */
 
 /* Start Second Main Mobile page */
-
 .second-main-mobile-section {
   overflow: hidden;
 }
@@ -5467,7 +5507,6 @@ a.category_items-l {
 }
 
 /*======================End mobile_main page ====================== */
-
 
 /* =========================== start Main Footer Css ==================== */
 .footer-heading {
@@ -5569,7 +5608,6 @@ a.category_items-l {
 /* =========================== end Main Footer Css ==================== */
 
 /* =========================== Start Login css ==================== */
-
 .login_main {
   background-color: #ECF5F3;
   max-width: 1066px;
@@ -5637,6 +5675,15 @@ a.category_items-l {
   background-color: #fff;
 }
 
+/* .login_img_form_main {
+  
+} */
+
+.logout_main {
+  padding: 25px 0 !important;
+  background-color: #fff;
+}
+
 .login_img_form_main {
   display: flex;
   justify-content: center;
@@ -5649,16 +5696,29 @@ a.category_items-l {
   color: #DB0B0B !important;
 }
 
+/* .log_out_btn_text {
+
+} */
+
+.log_out_btn_text:hover {
+  opacity: 1;
+  color: #DB0B0B !important;
+}
+
 .log_out_btn_text {
   color: #DB0B0B;
   display: flex;
   opacity: 0.7;
 }
 
-
 /* =========================== End Login css ==================== */
 
+
 /* =========================== Start about css ==================== */
+.about_list_title {
+  flex: 1;
+}
+
 .about_list_title {
   flex: 1;
 }
@@ -5705,12 +5765,40 @@ a.category_items-l {
 }
 
 .profile_wrapper .email_or_profile_img_main .user_name {
+  padding-top: 8px;
+}
+
+.profile_wrapper .email_or_profile_img_main .user_name {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   color: #000;
+}
+
+.profile_details_wrapper {
+  background-color: #fff;
+}
+
+.profile_details_wrapper .details_list li {
+  padding: 0;
+}
+
+.profile_details_wrapper .details_list li a {
+  color: #000;
+  padding: 12px 20px;
+  display: block;
+}
+
+.gender-select:hover {
+  background-color: rgba(124, 124, 124, 0.1);
+  padding: 0px 10px;
+  border-radius: 50px;
+}
+
+.item_title span {
+  padding-right: 10px;
 }
 
 .profile_details_wrapper {
@@ -5754,12 +5842,22 @@ a.category_items-l {
   opacity: .8;
 }
 
+.profile-btn:hover {
+  background-color: var(--themegreen);
+  opacity: .8;
+}
+
 .profile-logout-btn {
   color: #DB0B0B;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
+}
+
+.profile-logout-btn:hover {
+  color: #DB0B0B;
+  opacity: .6;
 }
 
 .profile-logout-btn:hover {
@@ -5783,6 +5881,10 @@ a.category_items-l {
   display: flex;
   justify-content: space-between;
   padding: 30px 0 40px 0;
+}
+
+.footer_profile_main .policies_footer_profile {
+  font-size: 14px;
 }
 
 .footer_profile_main .policies_footer_profile {
@@ -5979,7 +6081,6 @@ a.category_items-l {
   border: 2px solid #A2CDC5;
   transition: ease-in-out;
   background-color: #F6FAF9;
-
 }
 
 .email_address_details_profile {
@@ -6065,6 +6166,21 @@ a.category_items-l {
     padding: 80px 100px;
   }
 
+  /* mens wear */
+  .categories-filter-item {
+    padding: 0px 10px;
+  }
+
+  .categories-filter-item>div {
+    padding: 30px 10px;
+  }
+
+  .categories-filter-tabs {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+
 }
 
 @media screen and (max-width: 1366px) {
@@ -6073,7 +6189,7 @@ a.category_items-l {
   }
 
   .categories-filter-section .right-brand-slider {
-    margin: 70px -20px 0;
+    margin: 70px 0px 0;
   }
 
   .categories-filter-section .right-brand-slider .slick-next {
@@ -6125,9 +6241,13 @@ a.category_items-l {
   .categories-filter-section .right-brand-item h6 {
     font-size: 18px;
   }
+
+
+
 }
 
 @media screen and (max-width: 1024px) {
+
   .container {
     max-width: 980px;
     width: 100%;
@@ -6180,8 +6300,24 @@ a.category_items-l {
     padding-top: 71%;
   }
 
+  /* Mens-top-wear */
+  .categories-filter-left-col {
+    display: none;
+  }
 
+  .btn_categories_filter {
+    display: block;
+  }
 
+  .categories-filter-tabs {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  /* shiping section */
+  .shipping-section .shipping-col {
+    width: 50% !important;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -6205,16 +6341,11 @@ a.category_items-l {
     margin-left: 0;
   }
 
-  /* All Mobile */
-
-  .categories-filter-left-col {
-    display: none;
-  }
-
   .categories-filter-right-col {
     flex: 1;
     width: 100%;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -6363,6 +6494,7 @@ a.category_items-l {
     overflow: hidden;
   }
 
+
   /* payment option */
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
@@ -6377,6 +6509,11 @@ a.category_items-l {
 
   .patment-options-chack>label {
     font-size: 16px;
+  }
+
+  /* slike arrow */
+  .slick-next {
+    display: none !important;
   }
 
   /* order placed */
@@ -6465,6 +6602,21 @@ a.category_items-l {
   .login_form .login_center_mobile {
     display: flex;
     justify-content: center;
+  }
+
+  /* reffer page */
+  .reffer-code-main {
+    margin-top: 30px;
+    margin-left: 120px;
+  }
+
+  /* mens wear */
+  .categories-filter-item {
+    padding: 0px 40px;
+  }
+
+  .categories-tabs-center ul {
+    padding: 0px 20px;
   }
 
   /* reffer page */
@@ -6617,6 +6769,11 @@ a.category_items-l {
     padding: 0px 0px;
   }
 
+  /* slike arrow */
+  .slick-next {
+    display: none !important;
+  }
+
   /* payment option */
   .cash-delivery-inner {
     margin-top: 20px;
@@ -6766,6 +6923,42 @@ a.category_items-l {
     font-size: 20px;
   }
 
+  .shipping-section .shipping-col {
+    width: 100% !important;
+  }
+
+  .shipping-col {
+    margin-top: 15px;
+  }
+
+  .categories-filter-item {
+    padding: 0px 15px;
+  }
+
+  .categories-filter-path ul li a {
+    font-size: 13px;
+  }
+
+  .shipping-section .container-small {
+    padding: 0px 15px;
+  }
+
+  .shipping-section .shipping-content h3 {
+    font-size: 23px;
+  }
+
+  .shipping-section .shipping-content p {
+    font-size: 19px;
+  }
+
+  .categories-tabs-center ul {
+    padding: 0px 10px;
+  }
+
+  .shipping-section {
+    padding: 20px 0px;
+  }
+
   .mobile_image_maina_mobile_page {
     max-width: 80px;
   }
@@ -6776,13 +6969,15 @@ a.category_items-l {
 
   .mobile_name_main_page {
     font-size: 14px;
-} 
-.info_tag_line_mobile_card {
-  font-size: 10px;
-}
-.just_price_mobile_card {
-  font-size: 14px;
-}
+  }
+
+  .info_tag_line_mobile_card {
+    font-size: 10px;
+  }
+
+  .just_price_mobile_card {
+    font-size: 14px;
+  }
 
 }
 
@@ -6928,16 +7123,15 @@ a.category_items-l {
 
     padding: 30px;
   }
+
+  .migh-interested-section {
+    padding-bottom: 15px;
+  }
 }
 
 /*================================================================== */
 /* End Home page Media CSS */
 /*================================================================== */
-
-
-
-
-
 .migh-interested-section .cart-interested-slider .slick-arrow {
   background-color: #fff;
 }
@@ -6949,7 +7143,6 @@ a.category_items-l {
 }
 
 /*====================== Start Form page Media CSS ====================== */
-
 .use-this-address-inner {
   background-color: #fff;
   padding: 14px 20px 30px;

@@ -34,10 +34,6 @@ $(document).ready(function () {
     return false;
   });
 });
-
-
-
-
 /*********  Main PDP Slick  *********/
 $(document).ready(function () {
   $('.main-pdp-slider').slick({
@@ -88,9 +84,21 @@ $(document).ready(function () {
     autoplay: true,
     responsive: [
       {
+        breakpoint: 1441,
+        settings: {
+        slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
         breakpoint: 992,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
         }
       },
       {
@@ -100,7 +108,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 425,
+        breakpoint: 426,
         settings: {
           slidesToShow: 1,
         }
@@ -114,9 +122,21 @@ $(document).ready(function () {
     autoplay: true,
     responsive: [
       {
+        breakpoint: 1441,
+        settings: {
+        slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
         breakpoint: 992,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
         }
       },
       {
@@ -126,7 +146,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 425,
+        breakpoint: 426,
         settings: {
           slidesToShow: 1,
         }
@@ -210,7 +230,6 @@ $(document).ready(function () {
     document.execCommand("copy");
   });
 });
-
 $(document).ready(function () {
   $('.carousel').slick({
     slidesToShow: 5,
@@ -253,4 +272,10 @@ $(document).ready(function () {
     // autoplay: true,
   });
 
+});
+$(document).ready(function(){
+  $(".responsive-category").hide();
+  $(".responsive-filter-btn").click(function(){
+    $(".responsive-category").slideToggle();
+  });
 });
