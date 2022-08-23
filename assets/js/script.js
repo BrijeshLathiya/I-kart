@@ -34,10 +34,6 @@ $(document).ready(function () {
     return false;
   });
 });
-
-
-
-
 /*********  Main PDP Slick  *********/
 $(document).ready(function () {
   $('.main-pdp-slider').slick({
@@ -210,7 +206,6 @@ $(document).ready(function () {
     document.execCommand("copy");
     });
 });
-
 $(document).ready(function () {
   $('.carousel').slick({
     slidesToShow: 5,
@@ -278,4 +273,10 @@ $(document).ready(function () {
     ]
   });
 
+});
+$(document).ready(function(){
+  $(".responsive-category").hide();
+  $(".responsive-filter-btn").click(function(){
+    $(".responsive-category").slideToggle();
+  });
 });
