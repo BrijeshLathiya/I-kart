@@ -3937,6 +3937,7 @@ button.accordion-button {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 20px 40px;
+  background-position: right;
 }
 
 .crazy-deals-content h2 span {
@@ -6246,6 +6247,22 @@ a.category_items-l {
 
 }
 
+@media screen and (max-width: 1100px) {
+  .under-price-section .under-price-inner h3 {
+    font-size: 34px;
+  }
+
+  .under-price-section .under-price-inner h2 {
+    font-size: 74px;
+    line-height: 93px;
+  }
+
+  .no-cost-emi .under-price-inner h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
 
   .container {
@@ -6344,6 +6361,40 @@ a.category_items-l {
   .categories-filter-right-col {
     flex: 1;
     width: 100%;
+  }
+
+  .crazy-deals-content {
+    padding: 10px;
+  }
+
+  .crazy-deals-content a,
+  .crazy-deals-content h3,
+  .crazy-deals-content h5,
+  .crazy-deals-content h2 {
+    margin: 0 auto;
+  }
+
+  .crazy-deals-content {
+    padding: 10px;
+  }
+
+  .under-price-section .under-price-inner h3 {
+    font-size: 24px;
+  }
+
+  .under-price-section .under-price-inner h2 {
+    font-size: 54px;
+    line-height: 93px;
+  }
+
+  .no-cost-emi .under-price-inner h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .under-price-section .under-price-section-col {
+    width: 50%;
+    margin-bottom: 25px;
   }
 
 }
@@ -6641,6 +6692,25 @@ a.category_items-l {
     padding-top: 41%;
   } */
 
+  .crazy-deals-col {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+
+  .crazy-deals-content a,
+  .crazy-deals-content h3,
+  .crazy-deals-content h5,
+  .crazy-deals-content h2 {
+    margin: 0;
+  }
+
+  .under-price-section .under-price-section-col {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -6688,6 +6758,10 @@ a.category_items-l {
 
   .main-mobile-left {
     padding: 15px;
+  }
+
+  .under-price-section .under-price-section-col {
+    width: 100%;
   }
 }
 
