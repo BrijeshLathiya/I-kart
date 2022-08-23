@@ -4673,6 +4673,7 @@
   .main-min-cart {
     overflow: hidden;
   }
+ 
 
   /* payment option */
   .upi-id-content a,
@@ -4688,6 +4689,10 @@
 
   .patment-options-chack>label {
     font-size: 16px;
+  }
+  /* slike arrow */
+  .slick-next{
+    display: none !important;
   }
 
   /* order placed */
@@ -4867,6 +4872,10 @@
   }
   .main-min-cart .min-cart-accordian {
     padding: 0px 0px;
+  }
+   /* slike arrow */
+   .slick-next{
+    display: none !important;
   }
   /* payment option */
   .cash-delivery-inner {
@@ -5141,6 +5150,8 @@
   .migh-interested-section .migh-interested-container {
 
     padding: 30px;
+  }.migh-interested-section{
+    padding-bottom: 15px;
   }
 }
 
