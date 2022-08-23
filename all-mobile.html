@@ -898,6 +898,839 @@
                             <li><a href="#">Mobiles</a></li>
                         </ul>
                     </div>
+                    <!--begin:: res filter category -->
+                    <div>
+                        <!-- begin::res filter button -->
+                        <div class="left-filter-btn responsive-filter-btn d-xl-none">
+                            <a href="#" class="btn">
+                                <span>
+                                    <svg width="28" height="18" viewBox="0 0 28 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" width="27" height="3" fill="#4FC6AF" />
+                                        <rect x="5" y="7.5" width="18" height="3" fill="#4FC6AF" />
+                                        <rect x="11" y="15" width="6" height="3" fill="#4FC6AF" />
+                                    </svg>
+                                </span>
+                                <h5>Filter</h5>
+                            </a>
+                        </div>
+                        <!-- end::res filter button -->
+                        <!-- begin::res filter section -->
+                        <div class="responsive-category  d-xl-none">
+                            <div class="left-categories-title">
+                                <h4>CATEGORIES</h4>
+                            </div>
+                            <div class="left-mobile-accessories d-flex align-items-center flex-wrap">
+                                <span>
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.83263 13.8423C7.60948 14.0526 7.24767 14.0526 7.02451 13.8423L0.167369 7.38075C-0.0557884 7.17047 -0.0557884 6.82953 0.167369 6.61925L7.02451 0.157711C7.24767 -0.0525704 7.60948 -0.0525704 7.83263 0.157711C8.05579 0.367994 8.05579 0.708928 7.83263 0.919211L1.37955 7L7.83263 13.0808C8.05579 13.2911 8.05579 13.632 7.83263 13.8423Z"
+                                            fill="black" fill-opacity="0.6" />
+                                    </svg>
+                                </span>
+                                <h5 class="d-block">Mobile & Accessories</h5>
+                                <h3 class="w-100">Mobiles</h3>
+                                <ul class="mens-top-wear">
+                                    <li>All</li>
+                                    <li>T-shirts</li>
+                                    <li>Casual Shirts</li>
+                                    <li>Formal Shirts</li>
+                                    <li>Kurtas</li>
+                                    <li>Ethnic Sets</li>
+                                    <li>Blazers</li>
+                                    <li>Raincoat</li>
+                                    <li>Windcheaters</li>
+                                    <li>Suit</li>
+                                    <li>Fabrics</li>
+                                </ul>
+                            </div>
+                            <div class="accordion left-accordion-filter" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">PRICE</button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div data-role="rangeslider">
+                                                <div class="left-min-max">
+                                                    <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="100"
+                                                        data-popup-enabled="true" data-show-value="true">
+                                                </div>
+                                                <div class="min-max-input">
+                                                    <input placeholder="Min" type="number">
+                                                    <span>To</span>
+                                                    <input placeholder="Max" type="number">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">BRAND</button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>Realme</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>Poco</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>Samsung</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>Mi</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>Price : Low to High</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>Price : High to Low</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">CUSTOMER RATINGS</button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>3
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>2
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>1
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">GST
+                                            INVOICE</button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">RAM</button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">INTERNAL
+                                            STORAGE</button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="false"
+                                            aria-controls="collapseSeven">BATTERY CAPACITY</button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEight" aria-expanded="false"
+                                            aria-controls="collapseEight">SCREEN SIZE</button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingNine">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseNine" aria-expanded="false"
+                                            aria-controls="collapseNine">PRIMARY CAMERA</button>
+                                    </h2>
+                                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTen" aria-expanded="false"
+                                            aria-controls="collapseTen">SECONDARY CAMERA</button>
+                                    </h2>
+                                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEleven">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEleven" aria-expanded="false"
+                                            aria-controls="collapseEleven">PROCESSOR BRAND</button>
+                                    </h2>
+                                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwelve">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwelve" aria-expanded="false"
+                                            aria-controls="collapseTwelve">SPECIALITY</button>
+                                    </h2>
+                                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThirteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThirteen" aria-expanded="false"
+                                            aria-controls="collapseThirteen">RESOLUTION TYPE</button>
+                                    </h2>
+                                    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFourteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFourteen" aria-expanded="false"
+                                            aria-controls="collapseFourteen">OPERATING SYSTEM</button>
+                                    </h2>
+                                    <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFifteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFifteen" aria-expanded="false"
+                                            aria-controls="collapseFifteen">NETWORK TYPE</button>
+                                    </h2>
+                                    <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSixteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSixteen" aria-expanded="false"
+                                            aria-controls="collapseSixteen">SIM TYPE</button>
+                                    </h2>
+                                    <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeventeen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeventeen" aria-expanded="false"
+                                            aria-controls="collapseSeventeen">OFFERS</button>
+                                    </h2>
+                                    <div id="collapseSeventeen" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEighteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEighteen" aria-expanded="false"
+                                            aria-controls="collapseEighteen">BUDGET</button>
+                                    </h2>
+                                    <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingNineteen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseNineteen" aria-expanded="false"
+                                            aria-controls="collapseNineteen">FEATURES</button>
+                                    </h2>
+                                    <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwenty">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwenty" aria-expanded="false"
+                                            aria-controls="collapseTwenty">TYPE</button>
+                                    </h2>
+                                    <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwentyone">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwentyone" aria-expanded="false"
+                                            aria-controls="collapseTwentyone">NUMBER OF CORES</button>
+                                    </h2>
+                                    <div id="collapseTwentyone" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwentyone" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwentytwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwentytwo" aria-expanded="false"
+                                            aria-controls="collapseTwentytwo">AVAILABILITY</button>
+                                    </h2>
+                                    <div id="collapseTwentytwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwentytwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwentythree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwentythree" aria-expanded="false"
+                                            aria-controls="collapseTwentythree">DISCOUNT</button>
+                                    </h2>
+                                    <div id="collapseTwentythree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwentythree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwentyfour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwentyfour" aria-expanded="false"
+                                            aria-controls="collapseTwentyfour">CLOCK SPEED</button>
+                                    </h2>
+                                    <div id="collapseTwentyfour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwentyfour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="brannd-checkbox customer-ratings-checkbox">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span>4
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"
+                                                                    viewBox="0 0 13 12" fill="none">
+                                                                    <path
+                                                                        d="M9.50008 7.26294L12.1672 5.06427C12.5444 4.752 12.3493 4.14049 11.8549 4.11454L8.4202 3.90635C8.21202 3.89338 8.02987 3.76324 7.95183 3.56811L6.68983 0.341555C6.50769 -0.113852 5.87016 -0.113852 5.68802 0.341555L4.42602 3.5551C4.34797 3.75022 4.16584 3.88036 3.95765 3.89334L0.509919 4.10153C0.0155048 4.12757 -0.179626 4.73906 0.197649 5.05126L2.86476 7.23694C3.02086 7.36708 3.0989 7.58824 3.0469 7.78337L2.17521 11.127C2.05814 11.5954 2.56554 11.9726 2.98182 11.7125L5.88312 9.85203C6.06526 9.73496 6.28642 9.73496 6.4556 9.85203L9.3699 11.7125C9.78628 11.9726 10.2937 11.5954 10.1765 11.127L9.30483 7.79638C9.26581 7.60127 9.33088 7.39309 9.50004 7.26294H9.50008Z"
+                                                                        fill="black" />
+                                                                </svg>
+                                                            </span>
+                                                            & above
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end::res filter section -->
+                    </div>
+                    <!--end:: res filter category -->
                     <div class="categories-filter-title">
                         <h2>Redmi Note 10s</h2>
                         <span>(Showing 1 - 12 products of 12 products)</span>

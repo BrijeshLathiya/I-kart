@@ -2283,6 +2283,9 @@
   display: flex;
   justify-content: end;
   cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
 }.responsive-filter-btn .btn h5{
   font-size: 20px;
   margin-left: 20px;
@@ -4394,7 +4397,7 @@
   }
 
   .categories-filter-section .right-brand-slider {
-    margin: 70px -20px 0;
+    margin: 70px 0px 0;
   }
 
   .categories-filter-section .right-brand-slider .slick-next {
