@@ -5302,7 +5302,7 @@ a.category_items-l {
 
 /*======================End cancellation page ====================== */
 
-/*======================End mobile_main page ====================== */
+/*======================Start mobile_main page ====================== */
 /* Start Main Mobile page */
 .main-mobile-section,
 .second-main-mobile-section {
@@ -5401,6 +5401,7 @@ a.category_items-l {
   justify-content: center;
 }
 
+
 .section_title_main_mobile p {
   background-color: #4FC6AF;
   color: #fff;
@@ -5413,6 +5414,9 @@ a.category_items-l {
   line-height: 85px;
   max-width: 678px;
   width: 100%;
+}
+.section_title_main_mobile_pink_bg p {
+  background-color: #C43D79;
 }
 
 .main-mobile-left {
@@ -5483,7 +5487,8 @@ a.category_items-l {
   margin: 0 !important;
 }
 
-/* End Second Main Mobile page */
+
+/* Start mobile main page  */
 
 .big-main-mobile-section .row {
   max-width: 1200px;
@@ -5511,7 +5516,25 @@ a.category_items-l {
   background-image: url(../images/mobile_main_banner.png);
 }
 
-/*======================End mobile_main page ====================== */
+.mobile_info_main_mobile{
+  padding-top: 24px;
+}
+.big-main-mobile-section .main-mobile-col{
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+.big-main-mobile-section .no_costemi_bg_top{
+    text-align: center;
+    font-weight: 600;
+    padding: 18px 44px;
+    font-size: 30px;
+    top: -16px;
+}
+.big-main-mobile-section .mobile_name_main_page {
+  font-size: 55px;
+}
+/*======================End mobile main page ====================== */
 
 /* =========================== start Main Footer Css ==================== */
 .footer-heading {
@@ -6186,6 +6209,26 @@ a.category_items-l {
   .categories-item-description {
     max-width: 558px;
   }
+  /* mobile main page */
+  .section_title_main_mobile p{
+    font-size: 50px;
+    line-height: 100%;
+  }
+  .second-main-mobile-section .mobile_image_maina_mobile_page{
+    max-width: 150px;
+    padding-top: 60%;
+  }
+  .second-main-mobile-section .main-mobile-left{
+    padding: 0 !important;
+    padding-right: 12px !important;
+  }
+  .second-main-mobile-section .main-mobile-left .price_mobile_card_line_through{
+    margin: 0 !important;
+    line-height: 120%;
+  }
+  .second-main-mobile-section .main-mobile-left .just_price_mobile_card{
+    padding: 0;
+  }
 
 }
 
@@ -6210,7 +6253,22 @@ a.category_items-l {
 .top-offers-page .today-deals-section .migh-interested-col {
   width: 25%;
 }
-
+  /* mobile main page  */
+  .big-main-mobile-section .main-mobile-col{
+    max-width: 1150px;
+  }
+  .second-main-mobile-section .main_info_mobile_card  {
+    padding: 26px 20px;
+  }
+  .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top  {
+    top: -26px;
+    left: 60%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .second-main-mobile-section .main-mobile-left .price_mobile_card_line_through {
+    padding: 6px 0;
+}
 
 }
 
@@ -6254,7 +6312,33 @@ a.category_items-l {
   .categories-filter-section .right-brand-item h6 {
     font-size: 18px;
   }
+  /* mobile main */
+  .big-main-mobile-section .main-mobile-col{
+    max-width: 900px;
+  }
+  .big-main-mobile-section .mobile_name_main_page {
+    font-size: 35px;
+  }
+  .big-main-mobile-section .just_price_mobile_card {
+    font-size: 24px;
+  }
+  .big-main-mobile-section .no_costemi_bg_top {
+    padding: 10px 44px;
+    font-size: 20px;
+  }
+  .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top{
+    left: 100%;
+  }
+  .second-main-mobile-section .main-mobile-col{
+    padding:  10px;
+    width: 50%;
+  }
+ 
+
+
 }
+
+
 
 @media screen and (max-width: 1100px) {
   .under-price-section .under-price-inner h3 {
@@ -6363,7 +6447,9 @@ a.category_items-l {
   }
   .categories-main-price h3 {
     font-size: 28px;
-}
+  }
+
+
 }
 @media screen and (max-width: 980px) {
 
@@ -6461,6 +6547,24 @@ a.category_items-l {
     width: 50%;
     margin-bottom: 25px;
   }
+  /* mobile main page */
+  .big-main-mobile-section .main-mobile-col {
+    max-width: 780px;
+  }
+  .big-main-mobile-section .mobile_name_main_page {
+    font-size: 30px;
+    line-height: 110%;
+  }
+  .big-main-mobile-section .just_price_mobile_card {
+    font-size: 17px;
+    padding-top: 12px;
+  }
+  .big-main-mobile-section .info_tag_line_mobile_card {
+    font-size: 18px;
+    line-height: 200%;
+  }
+    
+
 
 }
 
@@ -6803,6 +6907,24 @@ a.category_items-l {
   }.categories-product-details{
     margin-top: 30px;
   }
+  /* mobile main page */
+  .big-main-mobile-section .mobile_image_maina_mobile_page {
+    max-width: 140px;
+  }
+  .big-main-mobile-section .main-mobile-col {
+    max-width: 650px;
+  }
+  .big-main-mobile-section .no_costemi_bg_top {
+    padding: 6px 24px;
+    font-size: 15px;
+  }
+  .section_title_main_mobile p{
+    font-size: 30px;
+    line-height: 100%;
+    max-width: 460px;
+    width: 100%;
+    padding: 23px 35px;
+  }
 
 }
 
@@ -6861,8 +6983,23 @@ a.category_items-l {
     .top-offers-page .today-deals-section .migh-interested-col {
       width: 100%;
     }
+    /* mobile main page */
+    .second-main-mobile-section .main-mobile-col {
+      padding: 10px;
+      width: 100%;
+      max-width: 450px;
+      margin: auto;
+  }
+  .second-main-mobile-section .main_info_mobile_card {
+    flex-direction: none;
+  }
+  .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top {
+    left: 55%;
+  }
+  .second-main-mobile-section .mobile_image_maina_mobile_page img {
+    margin: 15px 0;
+  }
 }
-
 @media screen and (max-width: 425px) {
   .logo-main {
     display: flex;
@@ -7177,9 +7314,17 @@ a.category_items-l {
   }.categories-product-details{
     margin-top: 30px;
   }
+  .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top {
+    left: 80%;
+  }
 
 }
 
+@media screen and (max-width: 375px) {
+  .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top{
+    left: 75%;
+  }
+}
 @media screen and (max-width: 350px) {
   .container {
     width: 100%;
@@ -7334,6 +7479,10 @@ a.category_items-l {
   .tab-view .tabs li:not(:last-of-type){
     margin-right: 0px;
   }
+  .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top{
+    left: 50%;
+    top: -162px;
+  }
 }
 
 /*================================================================== */
@@ -7463,5 +7612,6 @@ a.category_items-l {
   justify-content: flex-end;
   margin-top: 15px;
 }
+
 
 /* ====================== End Form page Media CSS ====================== */
