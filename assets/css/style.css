@@ -3457,13 +3457,13 @@ button.accordion-button {
 }
 
 .categories-item-description ul {
-  padding-left: 20px;
   margin: 0;
 }
 
 .categories-main-price {
   display: flex;
   align-items: center;
+  padding-right: 10px;
 }
 
 .categories-main-price span svg {
@@ -3754,7 +3754,7 @@ button.accordion-button {
 }
 
 .categories-filter-item>div {
-  padding: 30px 15px;
+  padding: 15px 15px;
 }
 
 .product-item.col-lg-2 {
@@ -4030,7 +4030,7 @@ button.accordion-button {
 
 .main-commen-page .slick-arrow {
   background: #ECF5F3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 0px 0px 10px;
   width: 50px;
   height: 100px;
   border: none;
@@ -5443,7 +5443,9 @@ a.category_items-l {
   left: 0;
   transform: translate(0, -50%) scale(-1);
 }
-
+.slick-prev {
+  border-radius: 0px 10px 10px 0px !important;
+}
 .main-mobile-section .slick-next {
   right: 0;
 }
@@ -6169,7 +6171,7 @@ a.category_items-l {
   }
 
   .categories-filter-item>div {
-    padding: 30px 10px;
+    padding: 15px 10px;
   }
 
   .categories-filter-tabs {
@@ -6179,10 +6181,10 @@ a.category_items-l {
   }
   /* All mobile */
   .tab-view .categories-item-top{
-    padding: 30px 10px 22px 30px;
+    padding: 30px 30px;
   }
   .categories-item-description {
-    max-width: 570px;
+    max-width: 558px;
   }
 
 }
@@ -6203,9 +6205,13 @@ a.category_items-l {
   .categories-filter-section .right-brand-slider .slick-arrow {
     left: 20px;
   }
-  .categories-item-description {
-    max-width: 450px;
-  }
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+.top-offers-page .today-deals-section .migh-interested-col {
+  width: 25%;
+}
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -6248,12 +6254,6 @@ a.category_items-l {
   .categories-filter-section .right-brand-item h6 {
     font-size: 18px;
   }
-  .categories-item-description {
-    max-width: 400px;
-  }
-
-
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -6325,6 +6325,11 @@ a.category_items-l {
   .migh-interested-section .migh-interested-image {
     padding-top: 71%;
   }
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+.top-offers-page .today-deals-section .migh-interested-col {
+  width: 33.33%;
+}
 
   /* Mens-top-wear */
   .categories-filter-left-col {
@@ -6359,7 +6364,7 @@ a.category_items-l {
   .categories-main-price h3 {
     font-size: 28px;
 }
-
+}
 @media screen and (max-width: 980px) {
 
   .container {
@@ -6669,12 +6674,18 @@ a.category_items-l {
   .top-offers-page .today-deals-section .migh-interested-slider {
     align-items: center;
     justify-content: center;
+  }.today-deals-section .migh-interested-title h2{
+    font-size: 18px;
+  }.migh-interested-title{
+    padding-bottom: 10px;
   }
 
   .migh-interested-section .migh-interested-container {
-    padding: 40px;
+    padding: 0px 40px;
   }
-
+  .featured-brands-section .featured-brands-row .slick-arrow{
+    display: none !important;
+  }
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 30%;
@@ -6685,12 +6696,11 @@ a.category_items-l {
     align-items: center;
     justify-content: center;
   }
-
-  .migh-interested-section .migh-interested-container {
-    padding: 40px;
-
-  }
-
+    /* top offer */
+    .deals-of-the-day-page .today-deals-section .migh-interested-col,
+    .top-offers-page .today-deals-section .migh-interested-col {
+      width: 50%;
+    }
   /* login */
   .login_main .login_main_info .logo_img_login {
     width: 100%;
@@ -6766,26 +6776,32 @@ a.category_items-l {
   }
   .tab_container .categories-filter-item{
     padding: 0 20px;
-  }
-
-
-  .crazy-deals-col {
+  }.categories-item-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+  }.main-title-section .main-title-inner h2{
+    font-size: 55px;
+  }.crazy-deals-col {
     width: 100%;
     padding: 0 20px;
     max-width: 400px;
     margin: 0 auto 20px;
   }
-
   .crazy-deals-content a,
   .crazy-deals-content h3,
   .crazy-deals-content h5,
   .crazy-deals-content h2 {
     margin: 0;
-  }
-
-  .under-price-section .under-price-section-col {
+  }.under-price-section .under-price-section-col {
     width: 50%;
     margin-bottom: 25px;
+  }.tab-view .tabs li:not(:last-of-type){
+    margin-right: 0px;
+  }.categories-product-details{
+    margin-top: 30px;
   }
 
 }
@@ -6840,6 +6856,11 @@ a.category_items-l {
   .under-price-section .under-price-section-col {
     width: 100%;
   }
+    /* top offer */
+    .deals-of-the-day-page .today-deals-section .migh-interested-col,
+    .top-offers-page .today-deals-section .migh-interested-col {
+      width: 100%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -7045,7 +7066,13 @@ a.category_items-l {
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 50%;
   }
-
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+.top-offers-page .today-deals-section .migh-interested-col {
+  width: 100%;
+}.deals-of-the-day{
+  font-size: 14px;
+}
   /* reffer page */
   .get-reffrl {
     font-size: 25px;
@@ -7128,6 +7155,27 @@ a.category_items-l {
 
   .just_price_mobile_card {
     font-size: 14px;
+  }
+  /* mens weear */
+  .tab_container .categories-filter-item{
+    padding: 0px 15px;
+    justify-content: center;
+  }
+
+  /* all mobile */
+  .main-title-section .main-title-inner h2, .main-mens-title-section .main-title-inner h2{
+    font-size: 30px;
+    line-height: 35px;
+  }.tab-view .tabs li:not(:last-of-type){
+    margin-right: 0px !important;
+  }.tab-view .tabs li h4{
+    font-size: 14px;
+  }.categories-filter-title span{
+    font-size: 14px;
+  }.categories-filter-title h2{
+    font-size: 18px;
+  }.categories-product-details{
+    margin-top: 30px;
   }
 
 }
@@ -7278,6 +7326,14 @@ a.category_items-l {
   .migh-interested-section {
     padding-bottom: 15px;
   }
+  /* mens wear */
+  .tab_container .categories-filter-item{
+    padding: 0px 15px;
+  }
+  /* all mobile */
+  .tab-view .tabs li:not(:last-of-type){
+    margin-right: 0px;
+  }
 }
 
 /*================================================================== */
@@ -7407,5 +7463,5 @@ a.category_items-l {
   justify-content: flex-end;
   margin-top: 15px;
 }
-}
+
 /* ====================== End Form page Media CSS ====================== */
