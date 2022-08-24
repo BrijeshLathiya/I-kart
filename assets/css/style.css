@@ -4030,7 +4030,7 @@ button.accordion-button {
 
 .main-commen-page .slick-arrow {
   background: #ECF5F3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 0px 0px 10px;
   width: 50px;
   height: 100px;
   border: none;
@@ -5443,7 +5443,9 @@ a.category_items-l {
   left: 0;
   transform: translate(0, -50%) scale(-1);
 }
-
+.slick-prev {
+  border-radius: 0px 10px 10px 0px !important;
+}
 .main-mobile-section .slick-next {
   right: 0;
 }
@@ -6664,9 +6666,11 @@ a.category_items-l {
   }
 
   .migh-interested-section .migh-interested-container {
-    padding: 40px;
+    padding: 0px 40px;
   }
-
+  .featured-brands-section .featured-brands-row .slick-arrow{
+    display: none !important;
+  }
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 30%;
@@ -6677,12 +6681,6 @@ a.category_items-l {
     align-items: center;
     justify-content: center;
   }
-
-  .migh-interested-section .migh-interested-container {
-    padding: 40px;
-
-  }
-
   /* login */
   .login_main .login_main_info .logo_img_login {
     width: 100%;
