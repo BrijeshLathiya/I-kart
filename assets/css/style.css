@@ -6205,6 +6205,12 @@ a.category_items-l {
   .categories-filter-section .right-brand-slider .slick-arrow {
     left: 20px;
   }
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+.top-offers-page .today-deals-section .migh-interested-col {
+  width: 25%;
+}
+
 
 }
 
@@ -6319,6 +6325,11 @@ a.category_items-l {
   .migh-interested-section .migh-interested-image {
     padding-top: 71%;
   }
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+.top-offers-page .today-deals-section .migh-interested-col {
+  width: 33.33%;
+}
 
   /* Mens-top-wear */
   .categories-filter-left-col {
@@ -6663,6 +6674,10 @@ a.category_items-l {
   .top-offers-page .today-deals-section .migh-interested-slider {
     align-items: center;
     justify-content: center;
+  }.today-deals-section .migh-interested-title h2{
+    font-size: 18px;
+  }.migh-interested-title{
+    padding-bottom: 10px;
   }
 
   .migh-interested-section .migh-interested-container {
@@ -6681,6 +6696,11 @@ a.category_items-l {
     align-items: center;
     justify-content: center;
   }
+    /* top offer */
+    .deals-of-the-day-page .today-deals-section .migh-interested-col,
+    .top-offers-page .today-deals-section .migh-interested-col {
+      width: 50%;
+    }
   /* login */
   .login_main .login_main_info .logo_img_login {
     width: 100%;
@@ -6836,6 +6856,11 @@ a.category_items-l {
   .under-price-section .under-price-section-col {
     width: 100%;
   }
+    /* top offer */
+    .deals-of-the-day-page .today-deals-section .migh-interested-col,
+    .top-offers-page .today-deals-section .migh-interested-col {
+      width: 100%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -7041,7 +7066,13 @@ a.category_items-l {
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 50%;
   }
-
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+.top-offers-page .today-deals-section .migh-interested-col {
+  width: 100%;
+}.deals-of-the-day{
+  font-size: 14px;
+}
   /* reffer page */
   .get-reffrl {
     font-size: 25px;
