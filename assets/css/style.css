@@ -5302,7 +5302,7 @@ a.category_items-l {
 
 /*======================End cancellation page ====================== */
 
-/*======================Start mobile_main page ====================== */
+/*======================,Start mobile_main page ====================== */
 /* Start Main Mobile page */
 .main-mobile-section,
 .second-main-mobile-section {
@@ -5447,9 +5447,11 @@ a.category_items-l {
   left: 0;
   transform: translate(0, -50%) scale(-1);
 }
+
 .slick-prev {
   border-radius: 0px 10px 10px 0px !important;
 }
+
 .main-mobile-section .slick-next {
   right: 0;
 }
@@ -6117,6 +6119,150 @@ a.category_items-l {
 
 /* =========================== end email address profile css ==================== */
 
+.migh-interested-section .cart-interested-slider .slick-arrow {
+  background-color: #fff;
+}
+
+.like-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+/*====================== Start Form page Media CSS ====================== */
+.use-this-address-inner {
+  background-color: #fff;
+  padding: 14px 20px 30px;
+}
+
+.address-item {
+  background-color: rgba(162, 205, 197, 0.3);
+  padding: 20px 30px 30px 70px;
+}
+
+.use-this-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.address-item label {
+  width: 100%;
+}
+
+.edit-address {
+  color: #3B903F;
+}
+
+.use-this-content h3:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -52px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+  transform: translateY(-50%);
+}
+
+.use-this-content h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -46px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #4FC6AF;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.address-item label input:checked~.use-this-content h3::after {
+  opacity: 1;
+}
+
+.use-this-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px 0 32px;
+  max-width: 426px;
+  width: 100%;
+}
+
+.use-this-content h6 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.address-item:not(:last-of-type) {
+  margin-bottom: 2px;
+}
+
+.add-new-address-btn a .add-new-address-inner {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #4FC6AF;
+}
+
+.add-new-address-btn a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.add-new-address-btn .add-new-address-icon {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #4FC6AF;
+  margin-right: 10px;
+}
+
+.deliver-here-btn a {
+  background-color: #3B903F;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding: 22px 40px;
+}
+
+.deliver-here-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+/* ====================== End Form page Media CSS ====================== */
+
+/* ====================== Start Order Placed page Media CSS ====================== */
+
+.redmi-mobile-right {
+  flex: 1;
+}
+
+.cancel-need-btn i {
+  width: 23px;
+  height: 23px;
+}
+
+.return-order-btn.d-flex.justify-content-end {
+  padding-right: 139px;
+}
+
+/* ====================== End Order Placed page Media CSS ====================== */
+
 /*================================================================== */
 /* Start Home page Media CSS */
 /*================================================================== */
@@ -6135,25 +6281,31 @@ a.category_items-l {
     margin: 0 auto;
     padding: 0 20px;
   }
+
   .home-work-check:not(:last-of-type) {
     margin-bottom: 20px;
   }
+
   /* payment option */
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
     margin-left: 0px;
     margin-top: 20px;
   }
+
   /* single product listing */
   .main-pdp-section .main-pdp-listing-col {
     width: 100%;
   }
+
   .main-pdp-section .main-pdp-listing-col ul {
     margin-bottom: 0px;
   }
+
   .meta-tag {
     margin-left: 48px;
   }
+
   .main-pdp-section .main-pdp-path,
   .main-pdp-section .main-pdp-title,
   .main-pdp-section .main-pdp-reviews,
@@ -6202,10 +6354,12 @@ a.category_items-l {
     justify-content: center;
     padding-right: 0;
   }
+
   /* All mobile */
-  .tab-view .categories-item-top{
+  .tab-view .categories-item-top {
     padding: 30px 30px;
   }
+
   .categories-item-description {
     max-width: 558px;
   }
@@ -6248,6 +6402,7 @@ a.category_items-l {
   .categories-filter-section .right-brand-slider .slick-arrow {
     left: 20px;
   }
+
   /* top offer */
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
 .top-offers-page .today-deals-section .migh-interested-col {
@@ -6269,6 +6424,15 @@ a.category_items-l {
   .second-main-mobile-section .main-mobile-left .price_mobile_card_line_through {
     padding: 6px 0;
 }
+
+  .top-offers-page .today-deals-section .migh-interested-col {
+    width: 25%;
+  }
+
+  .return-order-btn.d-flex.justify-content-end {
+    padding-right: 0px;
+  }
+
 
 }
 
@@ -6409,11 +6573,12 @@ a.category_items-l {
   .migh-interested-section .migh-interested-image {
     padding-top: 71%;
   }
+
   /* top offer */
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
-.top-offers-page .today-deals-section .migh-interested-col {
-  width: 33.33%;
-}
+  .top-offers-page .today-deals-section .migh-interested-col {
+    width: 33.33%;
+  }
 
   /* Mens-top-wear */
   .categories-filter-left-col {
@@ -6433,24 +6598,43 @@ a.category_items-l {
   .shipping-section .shipping-col {
     width: 50% !important;
   }
+
   /* All mobile */
- .categories-item-image img{
+  .categories-item-image img {
     max-width: 203px;
     width: 100%;
-  } 
+  }
+
   .categories-main-price span svg {
     width: 16px;
     height: 26px;
   }
-  .categories-sub-price{
+
+  .categories-sub-price {
     margin: 0;
   }
+
   .categories-main-price h3 {
     font-size: 28px;
   }
 
+}
+
+@media screen and (max-width: 991px) {
+  .order-placed-right {
+    text-align: center !important;
+  }
+
+  .order-placed-left {
+    justify-content: center !important;
+  }
+
+  .cancel-need-help {
+    padding-top: 30px;
+  }
 
 }
+
 @media screen and (max-width: 980px) {
 
   .container {
@@ -6479,27 +6663,32 @@ a.category_items-l {
 
   /* all mobile */
 
-  .categories-item-description h2{
+  .categories-item-description h2 {
     font-size: 22px;
   }
+
   .categories-item-description ul li {
     font-size: 13px;
     line-height: 120%;
     color: rgba(0, 0, 0, 0.8);
   }
-  .main-pdp-reviews>span{
+
+  .main-pdp-reviews>span {
     font-size: 15px;
   }
+
   .main-pdp-star {
     padding: 5px 7px;
     font-weight: 600;
     font-size: 12px;
     line-height: 120%;
   }
+
   .categories-main-price span svg {
     width: 16px;
     height: 22px;
   }
+
   .categories-main-price h3 {
     font-weight: 600;
     font-size: 26px;
@@ -6507,12 +6696,14 @@ a.category_items-l {
     color: #000000;
     margin: 0 0 0 6px;
   }
+
   .categories-item-image img {
     max-width: 150px;
   }
+
   .categories-item-save {
     left: 10px;
-}
+  }
 
   .crazy-deals-content {
     padding: 10px;
@@ -6770,6 +6961,24 @@ a.category_items-l {
 
   .success-icon {
     margin-left: 0px;
+    min-width: 66px;
+    height: 66px;
+    border: 6px solid var(--success);
+    border-radius: 100%;
+    margin: 20px;
+  }
+
+  .success-icon img {
+    width: 29px;
+  }
+
+  .order-table .title {
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  .order-placed-right {
+    margin-top: 20px !important;
   }
 
   /* deals-of-the-day */
@@ -6778,18 +6987,24 @@ a.category_items-l {
   .top-offers-page .today-deals-section .migh-interested-slider {
     align-items: center;
     justify-content: center;
-  }.today-deals-section .migh-interested-title h2{
+  }
+
+  .today-deals-section .migh-interested-title h2 {
     font-size: 18px;
-  }.migh-interested-title{
+  }
+
+  .migh-interested-title {
     padding-bottom: 10px;
   }
 
   .migh-interested-section .migh-interested-container {
     padding: 0px 40px;
   }
-  .featured-brands-section .featured-brands-row .slick-arrow{
+
+  .featured-brands-section .featured-brands-row .slick-arrow {
     display: none !important;
   }
+
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 30%;
@@ -6800,11 +7015,13 @@ a.category_items-l {
     align-items: center;
     justify-content: center;
   }
-    /* top offer */
-    .deals-of-the-day-page .today-deals-section .migh-interested-col,
-    .top-offers-page .today-deals-section .migh-interested-col {
-      width: 50%;
-    }
+
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+  .top-offers-page .today-deals-section .migh-interested-col {
+    width: 50%;
+  }
+
   /* login */
   .login_main .login_main_info .logo_img_login {
     width: 100%;
@@ -6865,46 +7082,62 @@ a.category_items-l {
   /* .mobile_image_maina_mobile_page {
     padding-top: 41%;
   } */
-  
+
   /* all mobile */
-  .categories-main-price h3{
+  .categories-main-price h3 {
     font-size: 26px;
     margin: 0 0 0 6px;
   }
+
   .categories-main-price span svg {
     width: 9px;
     height: 27px;
   }
+
   .tab-view .categories-item-top {
     padding: 30px 0px 22px 0px;
   }
-  .tab_container .categories-filter-item{
+
+  .tab_container .categories-filter-item {
     padding: 0 20px;
-  }.categories-item-price{
+  }
+
+  .categories-item-price {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     margin-top: 15px;
-  }.main-title-section .main-title-inner h2{
+  }
+
+  .main-title-section .main-title-inner h2 {
     font-size: 55px;
-  }.crazy-deals-col {
+  }
+
+  .crazy-deals-col {
     width: 100%;
     padding: 0 20px;
     max-width: 400px;
     margin: 0 auto 20px;
   }
+
   .crazy-deals-content a,
   .crazy-deals-content h3,
   .crazy-deals-content h5,
   .crazy-deals-content h2 {
     margin: 0;
-  }.under-price-section .under-price-section-col {
+  }
+
+  .under-price-section .under-price-section-col {
     width: 50%;
     margin-bottom: 25px;
-  }.tab-view .tabs li:not(:last-of-type){
+  }
+
+  .tab-view .tabs li:not(:last-of-type) {
     margin-right: 0px;
-  }.categories-product-details{
+  }
+
+  .categories-product-details {
     margin-top: 30px;
   }
   /* mobile main page */
@@ -6924,6 +7157,18 @@ a.category_items-l {
     max-width: 460px;
     width: 100%;
     padding: 23px 35px;
+  }
+
+  .cancel-need-help {
+    padding-top: 0;
+  }
+
+  .cancel-need-help-center {
+    padding: 30px 12px;
+  }
+
+  .return-order-btn.d-flex.justify-content-end {
+    justify-content: center !important;
   }
 
 }
@@ -6998,6 +7243,13 @@ a.category_items-l {
   }
   .second-main-mobile-section .mobile_image_maina_mobile_page img {
     margin: 15px 0;
+
+  }
+  /* top offer */
+  .deals-of-the-day-page .today-deals-section .migh-interested-col,
+  .top-offers-page .today-deals-section .migh-interested-col {
+    width: 100%;
+
   }
 }
 @media screen and (max-width: 425px) {
@@ -7203,13 +7455,17 @@ a.category_items-l {
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 50%;
   }
+
   /* top offer */
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
-.top-offers-page .today-deals-section .migh-interested-col {
-  width: 100%;
-}.deals-of-the-day{
-  font-size: 14px;
-}
+  .top-offers-page .today-deals-section .migh-interested-col {
+    width: 100%;
+  }
+
+  .deals-of-the-day {
+    font-size: 14px;
+  }
+
   /* reffer page */
   .get-reffrl {
     font-size: 25px;
@@ -7293,25 +7549,37 @@ a.category_items-l {
   .just_price_mobile_card {
     font-size: 14px;
   }
+
   /* mens weear */
-  .tab_container .categories-filter-item{
+  .tab_container .categories-filter-item {
     padding: 0px 15px;
     justify-content: center;
   }
 
   /* all mobile */
-  .main-title-section .main-title-inner h2, .main-mens-title-section .main-title-inner h2{
+  .main-title-section .main-title-inner h2,
+  .main-mens-title-section .main-title-inner h2 {
     font-size: 30px;
     line-height: 35px;
-  }.tab-view .tabs li:not(:last-of-type){
+  }
+
+  .tab-view .tabs li:not(:last-of-type) {
     margin-right: 0px !important;
-  }.tab-view .tabs li h4{
+  }
+
+  .tab-view .tabs li h4 {
     font-size: 14px;
-  }.categories-filter-title span{
+  }
+
+  .categories-filter-title span {
     font-size: 14px;
-  }.categories-filter-title h2{
+  }
+
+  .categories-filter-title h2 {
     font-size: 18px;
-  }.categories-product-details{
+  }
+
+  .categories-product-details {
     margin-top: 30px;
   }
   .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top {
@@ -7396,7 +7664,8 @@ a.category_items-l {
     padding: 3px 8px;
   }
 
-  .current-lo,cation-btn .btn {
+  .current-lo,
+  cation-btn .btn {
     width: 250px;
     padding: 11px 10px 12px;
   }
@@ -7471,12 +7740,14 @@ a.category_items-l {
   .migh-interested-section {
     padding-bottom: 15px;
   }
+
   /* mens wear */
-  .tab_container .categories-filter-item{
+  .tab_container .categories-filter-item {
     padding: 0px 15px;
   }
+
   /* all mobile */
-  .tab-view .tabs li:not(:last-of-type){
+  .tab-view .tabs li:not(:last-of-type) {
     margin-right: 0px;
   }
   .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top{
@@ -7615,3 +7886,4 @@ a.category_items-l {
 
 
 /* ====================== End Form page Media CSS ====================== */
+/*================================================================== */
