@@ -3754,7 +3754,7 @@ button.accordion-button {
 }
 
 .categories-filter-item>div {
-  padding: 30px 15px;
+  padding: 15px 15px;
 }
 
 .product-item.col-lg-2 {
@@ -6171,7 +6171,7 @@ a.category_items-l {
   }
 
   .categories-filter-item>div {
-    padding: 30px 10px;
+    padding: 15px 10px;
   }
 
   .categories-filter-tabs {
@@ -7125,9 +7125,14 @@ a.category_items-l {
   .just_price_mobile_card {
     font-size: 14px;
   }
+  /* mens weear */
+  .tab_container .categories-filter-item{
+    padding: 0px 15px;
+    justify-content: center;
+  }
 
   /* all mobile */
-  .main-title-section .main-title-inner h2{
+  .main-title-section .main-title-inner h2, .main-mens-title-section .main-title-inner h2{
     font-size: 30px;
     line-height: 35px;
   }.tab-view .tabs li:not(:last-of-type){
@@ -7289,6 +7294,10 @@ a.category_items-l {
 
   .migh-interested-section {
     padding-bottom: 15px;
+  }
+  /* mens wear */
+  .tab_container .categories-filter-item{
+    padding: 0px 15px;
   }
   /* all mobile */
   .tab-view .tabs li:not(:last-of-type){
