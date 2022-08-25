@@ -401,15 +401,12 @@ button {
   color: #ffffff;
   font-weight: 600;
   font-size: 24px;
-  line-height: 20px;
+  line-height: 80%;
 }
 
-.place-order-content .btn:hover {
-  padding: 22px;
-  font-size: 24px;
-  line-height: 20px;
-  font-weight: 600;
-}
+
+
+
 
 .main-min-cart .row {
   align-items: flex-start;
@@ -469,7 +466,6 @@ button {
 
 .change-btn .btn {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  /* font-weight: 500; */
   font-size: 18px;
   line-height: 22px;
   border-radius: 0;
@@ -1124,6 +1120,11 @@ button.accordion-button {
   width: 100%;
 }
 
+.enter-pincode-input input:focus {
+  outline: #000;
+  border-bottom: 1px solid rgb(0 0 0 / 1);
+
+}
 .enter-pincode-input input {
   border: none;
   border-bottom: 1px solid rgb(0 0 0 / 0.6);
@@ -1134,6 +1135,8 @@ button.accordion-button {
   font-size: 18px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.8);
+  padding: 0 0 0 15px;
+
 }
 
 .enter-pin-location p {
@@ -1401,7 +1404,7 @@ button.accordion-button {
   margin: 0 20px 0 2px;
   max-width: 326px;
   width: 100%;
-  padding: 13px 0;
+  padding: 13px 0 15px 15px;
 }
 
 .order-confirmation-inner input:focus-visible {
@@ -1488,6 +1491,15 @@ button.accordion-button {
   line-height: 29px;
   background: #3b903f;
   color: #fff;
+  max-width: 364px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.delivery-popup-inner .btn:hover{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
   max-width: 364px;
   width: 100%;
   margin: 0 auto;
@@ -1788,6 +1800,13 @@ button.accordion-button {
   padding: 0 118px;
 }
 
+.migh-interested-section .migh-interested-content .btn:hover {
+  padding: 5px 10px;
+  margin: 0 auto;
+  border: 1px solid var(--success);
+  background: transparent;
+  color: var(--success);
+}
 .migh-interested-section .migh-interested-content .btn {
   font-weight: 500;
   font-size: 18px;
@@ -4745,6 +4764,7 @@ a.category_items-l {
   color: #3B903F;
 }
 
+
 .change-btn {
   margin-top: auto;
   margin-bottom: auto;
@@ -5118,9 +5138,135 @@ a.category_items-l {
   padding: 22px 136px;
 }
 
+.change_btn_order_placed:hover {
+  background-color:#3B903F ;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+
 /*End order placed Pop-Up */
 
 /*======================End order-palced-cancellation page ====================== */
+
+/* form */
+.add-new-address-btn a .add-new-address-inner {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #4FC6AF;
+}
+.use-this-address-inner {
+  background-color: #fff;
+  padding: 14px 20px 30px;
+}
+
+.address-item {
+  background-color: rgba(162, 205, 197, 0.3);
+  padding: 20px 30px 30px 70px;
+}
+
+.use-this-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.address-item label {
+  width: 100%;
+}
+
+.edit-address {
+  color: #3B903F;
+}
+
+.use-this-content h3:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -52px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+  transform: translateY(-50%);
+}
+
+.use-this-content h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -46px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #4FC6AF;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.address-item label input:checked~.use-this-content h3::after {
+  opacity: 1;
+}
+
+.use-this-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px 0 32px;
+  max-width: 426px;
+  width: 100%;
+}
+
+.use-this-content h6 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.address-item:not(:last-of-type) {
+  margin-bottom: 2px;
+}
+
+
+
+.add-new-address-btn a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+
+.add-new-address-btn .add-new-address-icon {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #4FC6AF;
+  margin-right: 10px;
+}
+.deliver-here-btn a {
+  background-color: #3B903F;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding: 22px 40px;
+}
+
+.deliver-here-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+
+
 /*======================Start cancellation page ====================== */
 /* cancellation */
 .cancellation-page {
@@ -6214,12 +6360,7 @@ a.category_items-l {
   margin-bottom: 2px;
 }
 
-.add-new-address-btn a .add-new-address-inner {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  color: #4FC6AF;
-}
+
 
 .add-new-address-btn a {
   display: flex;
@@ -6546,6 +6687,16 @@ a.category_items-l {
   .main-nav .navbar-nav .nav-link {
     font-size: 16px;
   }
+  .details-box .delivery_address{
+    padding: 10px 0;
+  }
+
+  .details-box .delivery-address-right{
+    max-width: 426px;
+  }
+  .details-box .datails_box{
+    padding: 25px 0;
+  }
 
   /* my order */
   .main-nav .navbar-nav .nav-link {
@@ -6772,6 +6923,28 @@ a.category_items-l {
   .main-min-cart .main-title-code h4 {
     font-size: 16px;
   }
+  .main-enter-pin .enter-pin-inner{
+    max-width: 510px;
+  }
+  .enter-pin-title h6{
+    margin-bottom: 16px;
+  }
+  .enter-pin-location{
+    margin-bottom: 15px;
+  }
+  .enter-pin-location-icon svg{
+    max-width: 45px;
+  }
+  .enter-pin-location p{
+    font-size: 18px;
+    line-height: 300%;
+  }
+  .use-pincode p{
+    font-size: 18px;
+  }
+  .enter-pin-inner{
+    padding: 20px;
+  }
 
   .cart-right-pri h6,
   .cart-right-pri span,
@@ -6802,6 +6975,16 @@ a.category_items-l {
   .main-accordion-form .accordion-button h2 {
     width: 390px;
   }
+  
+  .add-new-address-btn .add-new-address-icon{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: #4FC6AF;
+    margin-right: 10px;
+  }
+  
+
 
   .main-min-cart .pri-inner .delete-pri,
   .main-min-cart .pri-inner .pri-offer,
@@ -6827,6 +7010,11 @@ a.category_items-l {
     font-size: 16px;
     line-height: 21px;
   }
+  .delivery-popup-inner{
+    max-width: 500px;
+    padding:30px;
+  }
+
 
   .main-min-cart .min-cart-content p {
     font-size: 16px;
@@ -6859,12 +7047,7 @@ a.category_items-l {
 
   .main-min-cart .pri-inner {
     margin-top: 30px;
-  }
-
-  .place-order-content .btn {
-    width: 80%;
-  }
-
+  } 
   .main-min-cart .main-title-code h4 {
     font-size: 16px;
     line-height: 21px;
@@ -6873,6 +7056,7 @@ a.category_items-l {
   .main-min-cart .main-title-code .btn {
     font-size: 14px;
     line-height: 19px;
+    border: #3b903f solid 1px !important;
   }
 
   .cart-right-pri h6,
@@ -6902,12 +7086,26 @@ a.category_items-l {
   }
 
 /* form page */
-.use-this-content h3{
-  font-size: 20px !important;
-}.use-this-content p{
-  font-size: 16px !important;
-  padding: 10px 0px !important;
-}
+
+  .use-this-content h3{
+    font-size: 20px !important;
+  }.use-this-content p{
+    font-size: 16px !important;
+    padding: 10px 0px !important;
+  }
+  .add-new-address-btn a .add-new-address-inner {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #4FC6AF;
+  }.add-new-address-btn .add-new-address-icon {
+    font-size: 30px;
+    line-height: 100%;
+  }
+  .deliver-here-btn a {
+    padding: 15px 40px;
+    font-size: 20px;
+  }
   /* payment option */
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
@@ -7224,6 +7422,9 @@ a.category_items-l {
   .under-price-section .under-price-section-col {
     width: 100%;
   }
+  .main-enter-pin .enter-pin-inner {
+    max-width: 400px;
+  }
     /* top offer */
     .deals-of-the-day-page .today-deals-section .migh-interested-col,
     .top-offers-page .today-deals-section .migh-interested-col {
@@ -7250,8 +7451,58 @@ a.category_items-l {
   .deals-of-the-day-page .today-deals-section .migh-interested-col,
   .top-offers-page .today-deals-section .migh-interested-col {
     width: 100%;
-
   }
+  /* form */
+  .delivery-popup-inner{
+    max-width: 350px;
+    padding:30px;
+  }.delivery-popup-inner p:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  .delivery-popup-inner .note{
+    padding: 20px 0 15px 0;
+  }
+  .delivery-popup-inner h3{
+    margin-bottom: 12px;
+  }
+  /* Gst Popup */
+  .Your-gst-inputs input:not(:last-of-type) {
+      margin-bottom: 15px;
+  }
+  .gst-invoice-box .Your-gst-Incorrect span:first-of-type {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+  .gst-invoice-box .Your-gst-btn{
+    max-width: 300px;
+  } 
+  .gst-invoice-box .Your-gst-btn .btn{
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+  .gst-invoice-box .Your-gst-btn .btn.btn:hover{
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+  .open-box-delivery-popup .delivery-popup-inner .btn{
+    font-size: 18px;
+  }
+  .gst-invoice-box .Your-gst-Incorrect span:last-of-type {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .gst-invoice-box .Your-gst-Incorrect{
+    margin: 15px 0 20px;
+  }
+  .gst-invoice-box .enter-pin-title h6{
+    font-size: 20px;
+  }
+  .Your-gst-inputs input {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
 }
 @media screen and (max-width: 425px) {
   .logo-main {
@@ -7312,15 +7563,18 @@ a.category_items-l {
   }
 
   .main-min-cart .min-cart-left-col {
-    padding: 0px 30px;
+    padding: 0px 15px;
   }
 
   .place-order-content .btn {
     font-size: 16px;
+    padding: 16px;
   }
 
-  .place-order-content .btn {
+  .place-order-content .btn:hover {
+    font-size: 16px;
     padding: 16px;
+    line-height: 80%;
   }
 
   .place-order-content {
@@ -7407,7 +7661,12 @@ a.category_items-l {
     padding: 9px 15px;
     font-size: 16px;
   }
-
+  /*order Delivery popup  */
+  .delivery-popup-inner .btn {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 264px;
+}
   /* my order */
   .order-table {
     padding: 10px 15px;
@@ -7604,6 +7863,15 @@ a.category_items-l {
   }.path .fa-angle-right{
     margin: 0px 5px;
   }
+  /* min-cart */
+  .main-enter-pin .enter-pin-inner {
+    max-width: 350px;
+  }
+  /* form */
+  .delivery-popup-inner{
+    max-width: 300px;
+    padding:30px;
+  }
 }
 @media screen and (max-width: 350px) {
   .container {
@@ -7661,6 +7929,28 @@ a.category_items-l {
     font-size: 14px;
     line-height: 20px;
   }
+  /* min-cart */
+    .main-enter-pin .enter-pin-inner {
+      max-width: 300px;
+    }
+    .enter-pin-title h6{
+      padding-top: 25px;
+    }
+    .current-location p {
+    font-size: 16px;
+    line-height: 100%;
+    margin-left: 20px;
+    }
+    .enter-pincode-input a{
+      font-size: 18px;
+    }
+    .enter-pin-location p {
+      font-size: 18px;
+      line-height: 140%;
+  }
+    .enter-pincode-input input{
+      font-size: 14px;
+    }
 
   /* accordian */
   .change-btn .btn {
@@ -7782,119 +8072,7 @@ a.category_items-l {
 }
 
 /*====================== Start Form page Media CSS ====================== */
-.use-this-address-inner {
-  background-color: #fff;
-  padding: 14px 20px 30px;
-}
 
-.address-item {
-  background-color: rgba(162, 205, 197, 0.3);
-  padding: 20px 30px 30px 70px;
-}
-
-.use-this-content h3 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-}
-
-.address-item label {
-  width: 100%;
-}
-
-.edit-address {
-  color: #3B903F;
-}
-
-.use-this-content h3:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -52px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
-  transform: translateY(-50%);
-}
-
-.use-this-content h3::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -46px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: #4FC6AF;
-  transform: translateY(-50%);
-  opacity: 0;
-}
-
-.address-item label input:checked~.use-this-content h3::after {
-  opacity: 1;
-}
-
-.use-this-content p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 15px 0 32px;
-  max-width: 426px;
-  width: 100%;
-}
-
-.use-this-content h6 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.address-item:not(:last-of-type) {
-  margin-bottom: 2px;
-}
-
-.add-new-address-btn a .add-new-address-inner {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  color: #4FC6AF;
-}
-
-.add-new-address-btn a {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.add-new-address-btn .add-new-address-icon {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  color: #4FC6AF;
-  margin-right: 10px;
-}
-
-.deliver-here-btn a {
-  background-color: #3B903F;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #FFFFFF;
-  padding: 22px 40px;
-}
-
-.deliver-here-btn {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 15px;
-}
 
 /* ====================== End Form page Media CSS ====================== */
 
