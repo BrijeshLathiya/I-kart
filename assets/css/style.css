@@ -7450,6 +7450,10 @@ a.category_items-l {
 
   .order-table {
     padding: 0px;
+  }.migh-interested-section .migh-interested-title h2{
+    font-size: 21px;
+  }.migh-interested-section .migh-interested-col{
+    padding: 0px 22.5px;
   }
 
   /* deals-of-the-day */
