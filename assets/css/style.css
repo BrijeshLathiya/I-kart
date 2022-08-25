@@ -7770,3 +7770,132 @@ a.category_items-l {
 /*================================================================== */
 /* End Home page Media CSS */
 /*================================================================== */
+
+.migh-interested-section .cart-interested-slider .slick-arrow {
+  background-color: #fff;
+}
+
+.like-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+/*====================== Start Form page Media CSS ====================== */
+.use-this-address-inner {
+  background-color: #fff;
+  padding: 14px 20px 30px;
+}
+
+.address-item {
+  background-color: rgba(162, 205, 197, 0.3);
+  padding: 20px 30px 30px 70px;
+}
+
+.use-this-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.address-item label {
+  width: 100%;
+}
+
+.edit-address {
+  color: #3B903F;
+}
+
+.use-this-content h3:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -52px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+  transform: translateY(-50%);
+}
+
+.use-this-content h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -46px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #4FC6AF;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.address-item label input:checked~.use-this-content h3::after {
+  opacity: 1;
+}
+
+.use-this-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px 0 32px;
+  max-width: 426px;
+  width: 100%;
+}
+
+.use-this-content h6 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.address-item:not(:last-of-type) {
+  margin-bottom: 2px;
+}
+
+.add-new-address-btn a .add-new-address-inner {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #4FC6AF;
+}
+
+.add-new-address-btn a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.add-new-address-btn .add-new-address-icon {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #4FC6AF;
+  margin-right: 10px;
+}
+
+.deliver-here-btn a {
+  background-color: #3B903F;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding: 22px 40px;
+}
+
+.deliver-here-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+/* ====================== End Form page Media CSS ====================== */
+
+/*================================================================== */
