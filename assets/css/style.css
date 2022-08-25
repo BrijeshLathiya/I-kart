@@ -472,9 +472,9 @@ button {
   /* font-weight: 500; */
   font-size: 18px;
   line-height: 22px;
-  /* color: #fff; */
   border-radius: 0;
   padding: 9px 19px;
+  margin-top: 0;
 }
 
 .change-btn .btn:hover {
