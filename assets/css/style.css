@@ -1849,7 +1849,7 @@ button.accordion-button {
 
 .migh-interested-section .slick-arrow {
   background: #ecf5f3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 0px 0px 10px;
   width: 50px;
   height: 100px;
   border: none;
@@ -2871,7 +2871,7 @@ button.accordion-button {
 
 .migh-interested-section .slick-arrow {
   background: #ECF5F3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 0px 0px 10px;
   width: 50px;
   height: 100px;
   border: none;
