@@ -5432,11 +5432,12 @@ a.category_items-l {
   width: 50px;
   height: 100px;
   background: #ECF5F3;
-  border-radius: 0px 10px 10px 0px;
+  /* border-radius: 0px 10px 10px 0px; */
   background-image: url(../images/angle-right.png);
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center center;
+  z-index: 1;
 }
 
 .main-mobile-section .slick-arrow:before {
@@ -5445,7 +5446,7 @@ a.category_items-l {
 
 .main-mobile-section .slick-prev {
   left: 0;
-  transform: translate(0, -50%) scale(-1);
+  border-radius: 0px 10px 10px 0px !important;
 }
 
 .slick-prev {
@@ -5454,6 +5455,7 @@ a.category_items-l {
 
 .main-mobile-section .slick-next {
   right: 0;
+  border-radius: 10px 0px 0px 10px !important;
 }
 
 /* End Main Mobile page */
@@ -6923,7 +6925,7 @@ a.category_items-l {
   }
 
   /* slike arrow */
-  .slick-next {
+  .slick-next,.main-mobile-section .slick-prev {
     display: none !important;
   }
 
