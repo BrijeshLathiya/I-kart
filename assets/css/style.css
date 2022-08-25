@@ -6229,7 +6229,7 @@ a.category_items-l {
 
 .add-new-address-btn a .add-new-address-inner {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 36px;
   color: #4FC6AF;
 }
@@ -6249,19 +6249,19 @@ a.category_items-l {
   margin-right: 10px;
 }
 
-.deliver-here-btn a {
-  background-color: #3B903F;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #FFFFFF;
-  padding: 22px 40px;
-}
-
 .deliver-here-btn {
   display: flex;
   justify-content: flex-end;
   margin-top: 15px;
+  background-color: var(--success);
+  width: fit-content;
+  margin-left: auto;
+  transition: .3s;
+}.deliver-here-btn a{
+  color: var(--white);
+  padding: 15px 20px;
+}.deliver-here-btn:hover{
+  opacity: .7;
 }
 
 /* ====================== End Form page Media CSS ====================== */
@@ -6286,14 +6286,12 @@ a.category_items-l {
 /*================================================================== */
 /* Start Home page Media CSS */
 /*================================================================== */
-
 @media screen and (max-width: 1980px) {
   .logo-main {
     display: flex;
     justify-content: left;
   }
 }
-
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 1320px;
@@ -6405,7 +6403,6 @@ a.category_items-l {
   }
 
 }
-
 @media screen and (max-width: 1366px) {
   .categories-filter-section .right-brand-item {
     padding: 0 20px;
@@ -6455,7 +6452,6 @@ a.category_items-l {
 
 
 }
-
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -6521,9 +6517,6 @@ a.category_items-l {
 
 
 }
-
-
-
 @media screen and (max-width: 1100px) {
   .under-price-section .under-price-inner h3 {
     font-size: 34px;
@@ -6539,7 +6532,6 @@ a.category_items-l {
     line-height: 27px;
   }
 }
-
 @media screen and (max-width: 1024px) {
 
   .container {
@@ -6639,7 +6631,6 @@ a.category_items-l {
   }
 
 }
-
 @media screen and (max-width: 991px) {
   .order-placed-right {
     text-align: center !important;
@@ -6654,7 +6645,6 @@ a.category_items-l {
   }
 
 }
-
 @media screen and (max-width: 980px) {
 
   .container {
@@ -6778,7 +6768,6 @@ a.category_items-l {
 
 
 }
-
 @media screen and (max-width: 768px) {
   .main-accordion-form .accordion-button h2 {
     font-size: 14px;
@@ -6925,7 +6914,13 @@ a.category_items-l {
     overflow: hidden;
   }
 
-
+/* form page */
+.use-this-content h3{
+  font-size: 20px !important;
+}.use-this-content p{
+  font-size: 16px !important;
+  padding: 10px 0px !important;
+}
   /* payment option */
   .upi-id-content a,
   .cash-on-delivery .upi-id-btn {
@@ -7192,7 +7187,6 @@ a.category_items-l {
   }
 
 }
-
 @media screen and (max-width: 575px) {
   .login_main .login_main_info .logo_img_login {
     max-width: 100px;
@@ -7609,9 +7603,7 @@ a.category_items-l {
   .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top {
     left: 80%;
   }
-
 }
-
 @media screen and (max-width: 375px) {
   .second-main-mobile-section .main_info_mobile_card .no_costemi_bg_top{
     left: 75%;
@@ -7779,135 +7771,6 @@ a.category_items-l {
     top: -162px;
   }
 }
-
 /*================================================================== */
 /* End Home page Media CSS */
-/*================================================================== */
-.migh-interested-section .cart-interested-slider .slick-arrow {
-  background-color: #fff;
-}
-
-.like-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-}
-
-/*====================== Start Form page Media CSS ====================== */
-.use-this-address-inner {
-  background-color: #fff;
-  padding: 14px 20px 30px;
-}
-
-.address-item {
-  background-color: rgba(162, 205, 197, 0.3);
-  padding: 20px 30px 30px 70px;
-}
-
-.use-this-content h3 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-}
-
-.address-item label {
-  width: 100%;
-}
-
-.edit-address {
-  color: #3B903F;
-}
-
-.use-this-content h3:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -52px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
-  transform: translateY(-50%);
-}
-
-.use-this-content h3::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -46px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: #4FC6AF;
-  transform: translateY(-50%);
-  opacity: 0;
-}
-
-.address-item label input:checked~.use-this-content h3::after {
-  opacity: 1;
-}
-
-.use-this-content p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 15px 0 32px;
-  max-width: 426px;
-  width: 100%;
-}
-
-.use-this-content h6 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.address-item:not(:last-of-type) {
-  margin-bottom: 2px;
-}
-
-.add-new-address-btn a .add-new-address-inner {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  color: #4FC6AF;
-}
-
-.add-new-address-btn a {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.add-new-address-btn .add-new-address-icon {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  color: #4FC6AF;
-  margin-right: 10px;
-}
-
-.deliver-here-btn a {
-  background-color: #3B903F;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #FFFFFF;
-  padding: 22px 40px;
-}
-
-.deliver-here-btn {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 15px;
-}
-
-
-/* ====================== End Form page Media CSS ====================== */
 /*================================================================== */
