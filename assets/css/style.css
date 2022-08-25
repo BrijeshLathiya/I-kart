@@ -5976,7 +5976,6 @@ a.category_items-l {
 /* =========================== end:: gender page ==================== */
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
-  position: absolute;
   left: -9999px;
 }
 
