@@ -8510,11 +8510,12 @@ input:focus {
 
 
 /* Start footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@300;400;500;600;700&display=swap');
 .bg-footer{
     background-color: #ECF5F3;
     font-family: 'Rasa', serif;
     font-size: 20px;
-
 }
 .bg-footer .font_size_18px_com{
     font-size: 18px;
@@ -8528,23 +8529,31 @@ input:focus {
     border: none;
     padding-left: 15px;
     padding-right: 8px;
+    max-width: 245px;
 }
 .footer_email::placeholder{
     color: #707070 !important;
-    font-size: 22px;
+    font-size: 18px;
 }
 .footer_email:focus{
     color: #000 !important;
 }
 .footer-heading{
-    font-weight: 600;
+  font-weight: 600;
+  font-family: 'Rasa';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
 }
 
 .footer-link li a{
-    font-size: 20px;
-    line-height: 20px;
-    text-decoration: none;
-    color: #000000;
+  font-family: 'Rasa';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 .footer-link li a:hover {
     color: #000000;
