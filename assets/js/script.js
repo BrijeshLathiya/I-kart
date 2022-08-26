@@ -187,10 +187,17 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   $('.main-min-cart .main-title-code .btn').click(function () {
-    $('.main-enter-pin').addClass("active");
+    $('.enter-pin-box').addClass("active");
   });
   $('.enter-pin-close-btn a').click(function () {
-    $('.main-enter-pin').removeClass("active");
+    $('.enter-pin-box').removeClass("active");
+  });
+
+  $('.main-min-cart .main-title-code .btn').click(function () {
+    $('.gst-invoice').addClass("active");
+  });
+  $('.enter-pin-close-btn a').click(function () {
+    $('.gst-invoice').removeClass("active");
   });
 
   $('.featured-brands-row').slick({

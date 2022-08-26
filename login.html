@@ -17,45 +17,49 @@
 
 </head>
 
-<body class="main-commen-page">
+<body class="login-page">
     
-    
-
-    <section>
-        <!--Start login Popup -->
-            <div class="login_main">
-                <div class="login_main_info">
-                    <div class="text-end">
-                        <!-- <button type="button" class="btn-close" aria-label="Close"></button> -->
-                        <button class="close_img_but">
-                            <img src="./assets/images/close_login.png" class="img-fluid" alt="">
-                        </button>
+    <!-- begin:: login page -->
+    <section class="col-10 m-auto">
+        <div class="login-form-main">
+            <form action="index.html" class="d-lg-flex ">
+                <div class="col-lg-6 col-12 text-center login-left-col">
+                    <div class="login-logo ">
+                        <img src="assets/images/login.png" alt="logo" name="logo" width="60%">
                     </div>
-                        <div class=" login_img_form_main">
-                            <div class="logo_img_login">
-                                <img src="./assets/images/login_logo.png" class="img-fluid" alt="">
-                            </div>
-                            <div class="login_form">
-                                <div class="btn_input_login">
-                                    <h5 class="form-label fw-bold d-block ">Mobile Number: <span class="text-danger">*</span> </h5>
-                                    <div class="mb-4 d-flex align-items-center">
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Mobile Number">
-                                        <button class="btn_login_get_opt">Get OTP</button>
-                                    </div>
-                                </div>
-                                    <div class="mb-4">
-                                        <label for="exampleFormControlInput1" class="d-none form-label fw-bold ">Mobile Number: <span class="text-danger">*</span> </label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter OTP">
-                                    </div>
-                                    <div class="d-flex flex-wrap login_center_mobile"> 
-                                        <button class="btn_login_get_opt m-0 ">LOGIN</button>
-                                    </div>
-                            </div>
-                        </div>
+                    <div class="login-form-text align-items-center pt-3">
+                        <h3>Welcome </h3>
+                        <h2>Glade To See You!</h2>
+                    </div>
                 </div>
+                <div class="col-lg-6 col-12 logo-right-col  align-items-center">
+                    <div class="login-hedding">Sign In</div>
+                    <div class="login-input-fild">
+                        <p>Mobile Number</p>
+                        <input type="text" placeholder="Enter your mobile number" name="mobile number">
+                        <div class="login-get-otp">
+                            <a href="#">GET OTP</a>
+                        </div>    
+                    </div>
+                    <div class="login-input-fild">
+                        <p>OTP</p>
+                        <input type="text" placeholder="Enter OPT" name="Enter OPT">
+                        <div class="login-get-otp">
+                        </div>    
+                    </div>
+                    <div class="login-button">
+                        <button>SIGN In</button>
+                    </div>
+                </div>
+            </form>
+            <div class="close-chk-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 2.41714L21.5829 0L12 9.58286L2.41714 0L0 2.41714L9.58286 12L0 21.5829L2.41714 24L12 14.4171L21.5829 24L24 21.5829L14.4171 12L24 2.41714Z" fill="white"/>
+                </svg>
             </div>
-        <!--End login Popup -->
+        </div>
     </section>
+    <!-- begin:: login page -->
 
     <!--jquery library -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
