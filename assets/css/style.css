@@ -1158,15 +1158,18 @@ button.accordion-button {
 }
 
 .enter-pincode-input a {
-  background: #c4c4c4;
+  background: var(--success);
   border-radius: 4px;
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
   color: rgba(255, 255, 255, 0.8);
   padding: 7px 16px 7px 15px;
+  transition: .3s;
 }
-
+.enter-pincode-input a:hover{
+  opacity: .8;
+}
 .enter-pincode-input {
   display: flex;
   flex-wrap: wrap;
@@ -1545,11 +1548,7 @@ button.accordion-button {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 9px 24px 8px 23px;
   border: 1px solid var(--success);
-  margin-top: 12px;
   background: transparent;
   color: var(--success);
 }
@@ -5190,7 +5189,7 @@ a.category_items-l {
   transform: translateY(-50%);
 }
 
-.use-this-content h3::after {
+/* .use-this-content h3::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -5201,7 +5200,7 @@ a.category_items-l {
   background-color: #4FC6AF;
   transform: translateY(-50%);
   opacity: 0;
-}
+} */
 
 .address-item label input:checked~.use-this-content h3::after {
   opacity: 1;
@@ -7545,6 +7544,7 @@ a.category_items-l {
     font-size: 16px;
     padding: 16px;
   }
+
 
   .place-order-content .btn:hover {
     font-size: 16px;
