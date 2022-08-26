@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rasa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 
 /*============== Start Default CSS ==============*/
@@ -3920,36 +3921,30 @@ button.accordion-button {
 /*==================== End mens wear Page ===============*/
 /*====================== start offer and home page css ====================== */
 .main-commen-page {
-  background-color: #fff;
+  background: var(--white);
 }
-
 .container {
   max-width: 1720px;
   width: 100%;
   padding: 0 20px;
 }
-
 .crazy-deals-section {
   background-color: #F3F3F3;
   padding: 30px 0;
 }
-
 .crazy-deals-row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -20px;
 }
-
 .crazy-deals-col {
   width: 33.33%;
   padding: 0 20px;
 }
-
 .crazy-deals-inner {
   padding: 12px;
   background-color: #fff;
 }
-
 .crazy-deals-content {
   background-repeat: no-repeat;
   background-size: cover;
@@ -3960,12 +3955,10 @@ button.accordion-button {
   padding: 20px 40px;
   background-position: right;
 }
-
 .crazy-deals-content h2 span {
   display: block;
   color: #FF5C00;
 }
-
 .crazy-deals-content h2 {
   font-weight: 800;
   font-size: 30px;
@@ -5791,114 +5784,98 @@ a.category_items-l {
 
 /* =========================== end Main Footer Css ==================== */
 
-/* =========================== Start Login css ==================== */
-.login_main {
-  background-color: #ECF5F3;
-  max-width: 1066px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #fff !important;
-  background: linear-gradient(90deg, rgba(94, 235, 207, 0.95) 1.27%, rgba(255, 255, 255, 0) 95.92%);
-  filter: drop-shadow(4px 6px 100px #4D7C73);
+/* =========================== begin:: login css ==================== */
+.login-page{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.login-form-main{
+  position: relative;
   border-radius: 20px;
-  padding: 100px 100px;
+  background-color: var(--white);
+  margin: 100px auto;
+}.close-chk-box{
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  right: 20px;
 }
-
-.login_main .close_img_but {
-  background-color: transparent;
-  border: transparent;
-}
-
-.login_main .login_main_info .logo_img_login {
-  max-width: 300px;
-  width: 100%;
-}
-
-.login_main .login_main_info .login_form input {
-  max-width: 245px;
-  width: 100%;
-  background: #FFFFFF;
-  border-radius: 70px;
-  border: 2px solid #fff;
-  font-size: 12px;
-}
-
-.login_main .login_main_info .login_form {
-  padding-left: 100px;
-  flex: 1;
-}
-
-.login_main .login_main_info .login_form input:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 2px solid #A2CDC5;
-  transition: ease-in-out;
-}
-
-.login_form .btn_login_get_opt {
-  background: #A2CDC5;
-  border-radius: 70px;
-  padding: 6px 20px;
-  border: 2px solid #A2CDC5;
-  color: #fff;
-  margin-left: 15px;
-  font-size: 12px;
+.login-left-col{
+  padding: 70px;
+  margin: auto;
+}.login-hedding{
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 82px;
+  color: #4D7C73;
+  margin-bottom: 20px;
+}.login-input-fild a{
+  position: absolute;
+  top: 45px;
+  left: 240px;
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 600;
-  letter-spacing: 1px;
-  max-width: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4D7C73;
+}.login-input-fild a:hover{
+  text-decoration: underline;
 }
-
-.login_form .btn_login_get_opt:hover {
-  background: transparent;
-  border: 2px solid #A2CDC5;
+.login-input-fild{
+  position: relative;
+  padding-bottom: 15px;
+}
+.login-form-text h3{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #949494;
+}.login-form-text h2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #4D7C73;
+}.logo-right-col{
+  background: #A2CDC5;
+  border-radius: 0px 20px 20px 0px;
+  padding: 70px;
+}.login-button button{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
   color: #A2CDC5;
+  background: #4D7C73;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 15px 50px;
+  transition: .3s;
+}.login-button button:hover{
+  opacity: .8;
 }
+.login-input-fild p{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4D7C73;
+}.login-input-fild input{
+  border: none;
+  outline: none;
+  background: #ECF5F3;
+  padding: 10px 80px 10px 20px;
+  margin-top: 10px;
+  border-radius: 50px;
+}.login-button{
+  padding: 20px 0px;
 
-.logout_main {
-  padding: 25px 0 !important;
-  background-color: #fff;
 }
-
-/* .login_img_form_main {
-  
-} */
-
-.logout_main {
-  padding: 25px 0 !important;
-  background-color: #fff;
-}
-
-.login_img_form_main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.log_out_btn_text:hover {
-  opacity: 1;
-  color: #DB0B0B !important;
-}
-
-/* .log_out_btn_text {
-
-} */
-
-.log_out_btn_text:hover {
-  opacity: 1;
-  color: #DB0B0B !important;
-}
-
-.log_out_btn_text {
-  color: #DB0B0B;
-  display: flex;
-  opacity: 0.7;
-}
-
-/* =========================== End Login css ==================== */
-
-
-/* =========================== Start about css ==================== */
+/* =========================== end:: login css ==================== */
 .about_list_title {
   flex: 1;
 }
@@ -6766,6 +6743,23 @@ a.category_items-l {
   .categories-main-price h3 {
     font-size: 28px;
   }
+  /* login */
+  .login-form-text h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #949494;
+  }.login-form-text h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #4D7C73;
+  }.logo-right-col,.login-left-col{
+    padding: 50px;
+  }
 
 }
 @media screen and (max-width: 991px) {
@@ -7222,27 +7216,19 @@ a.category_items-l {
   }
 
   /* login */
-  .login_main .login_main_info .logo_img_login {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .login_main {
-    padding: 15px;
-  }
-
-  .login_img_form_main {
-    display: block;
-  }
-
-  .login_main .login_main_info .login_form input {
-    flex: 1;
-    max-width: 100%;
-  }
-
-  .login_form .login_center_mobile {
-    display: flex;
-    justify-content: center;
+  .logo-right-col{
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+  }.login-input-fild a{
+    position: absolute;
+    top: 45px;
+    left: 380px;
+  }.login-logo img{
+    width: 40%;
+  }.logo-right-col, .login-left-col{
+    padding: 20px;
+  }.close-chk-box svg path{
+    fill: var(--themegreen);
   }
 
   /* reffer page */
@@ -7372,17 +7358,7 @@ a.category_items-l {
 
 }
 @media screen and (max-width: 575px) {
-  .login_main .login_main_info .logo_img_login {
-    max-width: 100px;
-    width: 100%;
-    padding-bottom: 15px;
-  }
 
-  .login_main .login_main_info .login_form {
-    padding-left: 0;
-    max-width: 90%;
-    margin: auto;
-  }
 
   /* email address */
   .email_address_details_profile {
@@ -7852,6 +7828,12 @@ a.category_items-l {
     font-size: 14px;
   }.path .fa-angle-right{
     margin: 5px 5px;
+  }
+  /* login */
+  .login-input-fild a{
+    position: absolute;
+    top: 45px;
+    left: 235px;
   }
 }
 @media screen and (max-width: 375px) {
