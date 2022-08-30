@@ -198,7 +198,9 @@ button {
 .custum_padding {
   padding: 0px 30px;
 }
-
+.empty-cart-padding{
+  padding: 140px 30px;
+}
 .main-min-cart .min-cart-content {
   font-weight: 500;
   font-size: 22px;
@@ -1920,12 +1922,6 @@ button.accordion-button {
   padding-bottom: 6px;
   padding-left: 12px;
 }
-
-.l-radio:hover,
-.l-radio:focus-within {
-  background: rgba(159, 159, 159, 0.1);
-}
-
 .l-radio input {
   vertical-align: middle;
   width: 20px;
@@ -5361,7 +5357,11 @@ a.category_items-l {
   color: rgb(0 0 0 / 60%);
   margin: 9px 0 20px;
 }
-
+.original-payment-inner button{
+  background-color: var(--success) !important;
+  transition: .3s;
+  color: var(--white) !important;
+}
 .cancellation-page .original-payment-inner .btn {
   font-weight: 600;
   font-size: 24px;
@@ -5415,10 +5415,8 @@ a.category_items-l {
   margin: 20px 0 0;
 }
 
-.cancellation-page .original-payment-inner .btn:hover {
-  color: #000 !important;
-  padding: 21px 35px;
-
+.cancellation-page .original-payment-inner button:hover {
+  opacity: .8;
 }
 
 /*======================End cancellation page ====================== */
@@ -5953,8 +5951,8 @@ a.category_items-l {
 /* =========================== Start profile css ==================== */
 .bg_on_body {
   background-color: #ECF5F3;
-  padding: 50px 0;
-  height: 100vh;
+  padding: 60px 0;
+  /* height: 100vh; */
 }
 
 .profile_wrapper {
@@ -5967,6 +5965,7 @@ a.category_items-l {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  cursor: pointer;
 }
 
 .profile_wrapper .email_or_profile_img_main {
@@ -5998,6 +5997,40 @@ a.category_items-l {
 
 .profile_details_wrapper {
   background-color: #fff;
+  height: 70vh;
+  padding: 50px 0px ;
+}
+.profile-main{
+  position: relative;
+}
+.profile-popup div{
+  padding: 10px 70px;
+  transition: .3s;
+}
+.profile-popup div:first-child a{
+  color: var(--black);
+  font-weight: 600;
+}
+.profile-popup div:hover{
+  background-color: rgba(135, 135, 135, 0.1);
+}
+.profile-event-popup{
+  transition: .3;
+  height: 0;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+}
+.profile-popup{
+  position: absolute;
+  background-color: #ECF5F3;
+  padding: 20px 0px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 3px 3px 20px rgb(0 0 0 0.6);
+  right: 0px;
+  transition: .3;
+  transform: scaleY(1);
 }
 
 .profile_details_wrapper .details_list li {
@@ -6090,6 +6123,29 @@ a.category_items-l {
   max-width: 28px;
   width: 100%;
 }
+.profile-row-main{
+  position: relative;
+}
+.gender-dropdown form p{
+  padding: 5px;
+}
+.gender-dropdown{
+  position: absolute;
+  background-color: #ECF5F3;
+  padding: 20px 20px;
+  width: 100px;
+  border-radius: 10px;
+  width:240px;
+  margin-top: 10px;
+}
+.active-dropdown{
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+}
+.profile-page-save-button{
+  margin-top: 20px;
+}
 
 /* profile foter */
 .border_on_profile_bottom {
@@ -6136,7 +6192,9 @@ a.category_items-l {
   border-radius: 50px;
   margin-left: 10px;
 }
-
+.item_title{
+  margin-bottom: 10px;
+}
 .pro-getOtp-btn:hover {
   opacity: .7;
 }
@@ -6145,6 +6203,7 @@ a.category_items-l {
 /* =========================== end:: gender page ==================== */
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
+  position: absolute;
   left: -9999px;
 }
 
@@ -6205,6 +6264,9 @@ a.category_items-l {
 
 /* =========================== end:: about page ==================== */
 /* =========================== begin:: reffrl page ==================== */
+.reffer-bg{
+  background-color: var(--white);
+}
 .get-reffrl {
   font-family: 'Niramit';
   font-style: normal;
@@ -6743,6 +6805,10 @@ a.category_items-l {
   .main-pdp-section .main-pdp-delivery h4 {
     margin-right: 20px;
   }
+  /* reffer */
+  .reffer-img-main{
+    width: 60%;
+  }
 
 }
 @media screen and (max-width: 1200px) {
@@ -7251,6 +7317,7 @@ a.category_items-l {
     font-size: 18px;
     line-height: 23px;
   }
+
 
   .main-cart-item .col {
     flex: 1 0 100%;

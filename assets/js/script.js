@@ -33,6 +33,13 @@ $(document).ready(function () {
     $input.change();
     return false;
   });
+
+  $(".profile-row-main").click(function(){
+    $(".gender-dropdown").toggleClass("active-dropdown" , "");
+  });
+  $(".my_account_top").click(function(){
+    $(".profile-popup").toggleClass("profile-event-popup" , "");
+  });
 });
 /*********  Main PDP Slick  *********/
 $(document).ready(function () {
