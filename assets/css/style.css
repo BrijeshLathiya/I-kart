@@ -6067,11 +6067,9 @@ a.category_items-l {
   padding: 0px 10px;
   border-radius: 50px;
 }
-
 .item_title span {
   padding-right: 10px;
 }
-
 .profile-btn {
   border: none;
   outline: none;
@@ -6083,17 +6081,14 @@ a.category_items-l {
   font-family: Rasa;
   transition: .3s;
 }
-
 .profile-btn:hover {
   background-color: var(--themegreen);
   opacity: .8;
 }
-
 .profile-btn:hover {
   background-color: var(--themegreen);
   opacity: .8;
 }
-
 .profile-logout-btn {
   color: #DB0B0B;
   font-size: 14px;
@@ -6101,17 +6096,14 @@ a.category_items-l {
   font-weight: 700;
   line-height: 18px;
 }
-
 .profile-logout-btn:hover {
   color: #DB0B0B;
   opacity: .6;
 }
-
 .profile-logout-btn:hover {
   color: #DB0B0B;
   opacity: .6;
 }
-
 .profile_details_wrapper .my_order_list .order_icons_profile {
   padding-right: 8px;
   flex: 1;
@@ -6141,26 +6133,21 @@ a.category_items-l {
 .profile-page-save-button{
   margin-top: 20px;
 }
-
 /* profile foter */
 .border_on_profile_bottom {
   border: solid 1px #BDE7DF;
 }
-
 .footer_profile_main {
   display: flex;
   justify-content: space-between;
   padding: 30px 0 40px 0;
 }
-
 .footer_profile_main .policies_footer_profile {
   font-size: 14px;
 }
-
 .footer_profile_main .policies_footer_profile {
   font-size: 14px;
 }
-
 .save_btn_profile {
   display: flex;
   justify-content: center;
