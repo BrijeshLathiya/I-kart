@@ -213,6 +213,12 @@ $(document).ready(function () {
   $('.main-overlay').click(function () {
     $('.request-for-return').removeClass("active");
   });
+  $('.sign-in-popup').click(function () {
+    $('.main-login-page').addClass("active");
+  });
+  $('.close-chk-box').click(function () {
+    $('.main-login-page').removeClass("active");
+  });
 
   $('.featured-brands-row').slick({
     slidesToShow: 4,
