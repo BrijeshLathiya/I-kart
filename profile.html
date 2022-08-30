@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<body class="main-commen-page">
+<body class="">
     <!--begin::profile page -->
     <section class="bg_on_body ">
             <!--begin:: header -->
             <div class="container profile_wrapper">
                 <div class="row ">
-                    <div class="col-xxl-12">
-                        <div class="my_account_top">
+                    <div class="col-xxl-12 profile-main">
+                        <div class="my_account_top ">
                             <div>
                                 <h3 class="title_my_ac">My Account</h3>
                             </div>
@@ -37,23 +37,56 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="profile-popup profile-event-popup">
+                            <div>
+                                <a href="profile.html">Profile</a>
+                            </div>
+                            <div>
+                                <a href="#" class="profile-logout-btn">
+                                <span class="pe-2">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 19.1719H3C2.46957 19.1719 1.96086 18.9612 1.58579 18.5861C1.21071 18.211 1 17.7023 1 17.1719V3.17188C1 2.64144 1.21071 2.13273 1.58579 1.75766C1.96086 1.38259 2.46957 1.17188 3 1.17188H7" stroke="#DB0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14 15.1719L19 10.1719L14 5.17188" stroke="#DB0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M19 10.1719H7" stroke="#DB0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </span> Log Out</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
            
             <!--end:: header -->
             <!-- begin:: body -->
-            <div class="container profile_details_wrapper py-5">
+            <div class="container profile_details_wrapper">
                 <!-- begin:: body contant -->
-                <div class="row justify-content-center">
+                <div class="row justify-content-center ">
                     <div class="col-xxl-4 col-lg-6 ">
                         <ul class="details_list">
                             <li>
                                 <div class="main_single_item d-flex align-items-center justify-content-between">
                                     <h4 class="item_title"> Gender </h4>
-                                    <a href="gender.html" class="gender-select d-flex justify-content-between align-items-center w-50 ">
-                                        <p class="item_value"> Female </p>
-                                        <img class="item_arrow" src="./assets/images/profile_angle_right.png" alt="" height="100%">
+                                    <a href="#" class=" w-50 profile-row-main gender-select">
+                                        <div class="  d-flex justify-content-between align-items-center ">
+                                            <p class="item_value"> Female </p>
+                                            <img class="item_arrow" src="./assets/images/profile_angle_right.png" alt="" height="100%">
+                                        </div>
+                                        <ul class="gender-dropdown active-dropdown">
+                                            <form action="#">
+                                                <p class="gender-fild">
+                                                  <input type="radio" id="test1" name="radio-group" checked>
+                                                  <label for="test1">Male</label>
+                                                </p>
+                                                <p class="gender-fild">
+                                                  <input type="radio" id="test2" name="radio-group">
+                                                  <label for="test2">Female</label>
+                                                </p>
+                                                <p class="gender-fild">
+                                                  <input type="radio" id="test3" name="radio-group">
+                                                  <label for="test3">Other</label>
+                                                </p>
+                                              </form>
+                                        </ul>
                                     </a>
                                 </div>
                             </li>
@@ -81,7 +114,7 @@
                         <ul class="details_list">
                             <li>
                                 <div class="main_single_item ">
-                                    <a href="" class="gender-select  d-flex justify-content-between align-items-center ">
+                                    <a href="my-order.html" class="gender-select  d-flex justify-content-between align-items-center ">
                                         <h4 class="item_title">
                                         <span>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +127,7 @@
                             </li>
                             <li>
                                 <div class="main_single_item ">
-                                    <a href="" class="gender-select  d-flex justify-content-between align-items-center ">
+                                    <a href="form.html" class="gender-select  d-flex justify-content-between align-items-center ">
                                         <h4 class="item_title">
                                         <span>
                                             <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +141,7 @@
                             </li>
                             <li>
                                 <div class="main_single_item ">
-                                    <a href="" class="gender-select d-flex justify-content-between align-items-center">
+                                    <a href="form.html" class="gender-select d-flex justify-content-between align-items-center">
                                         <h4 class="item_title">
                                         <span>
                                             <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +154,7 @@
                             </li>
                             <li>
                                 <div class="main_single_item ">
-                                    <a href="" class="gender-select d-flex justify-content-between align-items-center ">
+                                    <a href="about.html" class="gender-select d-flex justify-content-between align-items-center ">
                                         <h4 class="item_title">
                                         <span>
                                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,6 +167,19 @@
                                     </a>
                                 </div>
                             </li>
+                            <li>
+                                <div class="main_single_item ">
+                                    <a href="reffrl.html" class="gender-select d-flex justify-content-between align-items-center ">
+                                        <h4 class="item_title">
+                                        <span>
+                                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.6667 15.2653C15.875 15.2653 15.1444 15.5459 14.5722 16.0145L8.81667 11.8082C8.91304 11.2738 8.91304 10.7262 8.81667 10.1918L14.5722 5.98546C15.1444 6.45408 15.875 6.73469 16.6667 6.73469C18.5056 6.73469 20 5.225 20 3.36735C20 1.50969 18.5056 0 16.6667 0C14.8278 0 13.3333 1.50969 13.3333 3.36735C13.3333 3.69286 13.3778 4.00434 13.4639 4.30179L7.99722 8.30051C7.18611 7.21454 5.89722 6.5102 4.44444 6.5102C1.98889 6.5102 0 8.51939 0 11C0 13.4806 1.98889 15.4898 4.44444 15.4898C5.89722 15.4898 7.18611 14.7855 7.99722 13.6995L13.4639 17.6982C13.3778 17.9957 13.3333 18.3099 13.3333 18.6327C13.3333 20.4903 14.8278 22 16.6667 22C18.5056 22 20 20.4903 20 18.6327C20 16.775 18.5056 15.2653 16.6667 15.2653ZM16.6667 1.90816C17.4639 1.90816 18.1111 2.56199 18.1111 3.36735C18.1111 4.1727 17.4639 4.82653 16.6667 4.82653C15.8694 4.82653 15.2222 4.1727 15.2222 3.36735C15.2222 2.56199 15.8694 1.90816 16.6667 1.90816ZM4.44444 13.4694C3.09722 13.4694 2 12.361 2 11C2 9.63903 3.09722 8.53061 4.44444 8.53061C5.79167 8.53061 6.88889 9.63903 6.88889 11C6.88889 12.361 5.79167 13.4694 4.44444 13.4694ZM16.6667 20.0918C15.8694 20.0918 15.2222 19.438 15.2222 18.6327C15.2222 17.8273 15.8694 17.1735 16.6667 17.1735C17.4639 17.1735 18.1111 17.8273 18.1111 18.6327C18.1111 19.438 17.4639 20.0918 16.6667 20.0918Z" fill="black"/>
+                                            </svg>
+                                        </span> Reffrl </h4>
+                                        <img class="item_arrow" src="./assets/images/profile_angle_right.png" alt="" height="100%">
+                                    </a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -141,20 +187,6 @@
                 <!-- begin:: save button -->
                 <div class="profile-page-save-button text-center mt-4">
                     <button type="submit" name="save" class="profile-btn">save</button>
-                </div>
-                <!-- end:: save button -->
-                <!-- begin:: save button -->
-                <div class="profile-logout">
-                    <div>
-                        <a href="#" class="profile-logout-btn">
-                            <span class="pe-2">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 19.1719H3C2.46957 19.1719 1.96086 18.9612 1.58579 18.5861C1.21071 18.211 1 17.7023 1 17.1719V3.17188C1 2.64144 1.21071 2.13273 1.58579 1.75766C1.96086 1.38259 2.46957 1.17188 3 1.17188H7" stroke="#DB0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14 15.1719L19 10.1719L14 5.17188" stroke="#DB0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M19 10.1719H7" stroke="#DB0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                            </span> Log Out</a>
-                    </div>
                 </div>
                 <!-- end:: save button -->
             </div>

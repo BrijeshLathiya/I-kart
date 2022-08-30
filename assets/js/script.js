@@ -33,6 +33,13 @@ $(document).ready(function () {
     $input.change();
     return false;
   });
+
+  $(".profile-row-main").click(function(){
+    $(".gender-dropdown").toggleClass("active-dropdown" , "");
+  });
+  $(".my_account_top").click(function(){
+    $(".profile-popup").toggleClass("profile-event-popup" , "");
+  });
 });
 /*********  Main PDP Slick  *********/
 $(document).ready(function () {
@@ -200,6 +207,13 @@ $(document).ready(function () {
     $('.gst-invoice').removeClass("active");
   });
 
+  $('.original-payment-inner .btn, .return-order-btn .btn-outline').click(function () {
+    $('.request-for-return').addClass("active");
+  });
+  $('.main-overlay').click(function () {
+    $('.request-for-return').removeClass("active");
+  });
+
   $('.featured-brands-row').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -273,6 +287,12 @@ $(document).ready(function () {
     ]
   });
   $('.main-mobile-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+  });
+  $('.main-banner-row').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,

@@ -80,20 +80,21 @@
                                         </div>
                                         <div class="original-payment-mode">
                                             <label>
-                                                <input type="checkbox">
+                                                <input type="checkbox" name="cancellation" id="cancellation">
                                                 <span>Original Payment Mode</span>
                                                 <div class="original-payment-inner">
                                                     <p>Refund will be processed within 8 days.</p>
-                                                    <a href="#" class="btn text-white">REQUEST CANCELLATION</a>
+                                                    <button href="#" class="btn ">REQUEST CANCELLATION</button>
                                                 </div>
                                             </label>
                                         </div>
                                         <div class="original-payment-mode">
                                             <label>
-                                                <input type="checkbox">
+                                                <input type="checkbox" name="cancellation" id="cancellation">
                                                 <span>No valid refund</span>
                                                 <div class="original-payment-inner">
-                                                    <p>There will be no refund as the order is purchased using Cash-On-Delivery</p>
+                                                    <p>There will be no refund as the order is purchased using
+                                                        Cash-On-Delivery</p>
                                                 </div>
                                             </label>
                                         </div>
@@ -123,11 +124,56 @@
             </div>
         </section>
         <!-- End Min Cart -->
+
+        <div class="request-for-return">
+            <div class="main-overlay"></div>
+            <div class="request-return-inner">
+                <h2>Request for return:- </h2>
+                <ul class="brannd-checkbox">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Defective Product</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Wrong Product </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Packege damege </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Poor Quality</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span>Out Dated</span>
+                        </label>
+                    </li>
+                </ul>
+                <textarea placeholder="Description"></textarea>
+                <div class="request-return-btn">
+                    <a href="#" class="btn">SUBMIT</a>
+                </div>
+            </div>
+        </div>
+
     </main>
     <!-- end::refund modal -->
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
