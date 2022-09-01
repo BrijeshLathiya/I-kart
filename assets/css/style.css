@@ -8622,7 +8622,16 @@ input:focus {
   background-color: #d1fff7;
   color: #000;
 }
-
+.dropdown-item svg{
+  margin-right: 5px;
+}
+.dropdown-item{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+}
+.dropdown-item-more{
+  padding: 10px 20px;
+}
 .more_show_header {
   transform: translate3d(-200px, 22px, 0px);
 }
