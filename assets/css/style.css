@@ -2700,7 +2700,7 @@ button.accordion-button {
   background: rgba(79, 198, 175, 0.04);
   border: 1px solid #4FC6AF;
   padding: 43px 32px 49px 45px;
-  margin: 69px 0 0;
+  margin: 20px 0 0;
 }
 
 .main-pdp-section .reviews-image img {
@@ -5916,6 +5916,9 @@ a.category_items-l {
   background: #A2CDC5;
   border-radius: 0px 20px 20px 0px;
   padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .login-button button {
@@ -8619,7 +8622,16 @@ input:focus {
   background-color: #d1fff7;
   color: #000;
 }
-
+.dropdown-item svg{
+  margin-right: 5px;
+}
+.dropdown-item{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 40px;
+}
+.dropdown-item-more{
+  padding: 10px 20px;
+}
 .more_show_header {
   transform: translate3d(-200px, 22px, 0px);
 }
